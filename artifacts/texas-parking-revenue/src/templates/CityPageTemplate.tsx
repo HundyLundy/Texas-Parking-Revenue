@@ -61,6 +61,21 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
     },
   });
 
+  // City-specific accent scheme:
+  // Dallas → Cowboys silver only (no red)
+  // Houston → Texans red only (no silver)
+  // Others → mixed default
+  const isDallas  = id === "dallas";
+  const isHouston = id === "houston";
+
+  const snapshotBorder  = isDallas ? "border-l-texas-silver" : "border-l-texas-red";
+  const snapshotLabel   = isDallas ? "text-texas-silver"     : "text-texas-red/80";
+  const demandsDivider  = isDallas ? "border-t-texas-silver/50"
+                        : isHouston ? "border-t-texas-red/35"
+                        : "border-t-texas-silver/30";
+  const contextDivider  = isDallas ? "border-t-[3px] border-t-texas-silver/35"
+                        : "border-t-[3px] border-t-texas-red/20";
+
   return (
     <Layout>
       <MetaTags
@@ -103,8 +118,8 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
       <section className="py-16 bg-background border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {data.metroSummary && (
-            <div className="bg-accent/10 border border-accent/20 border-l-4 border-l-texas-red rounded-2xl px-6 py-4 mb-8 text-sm text-foreground/80 font-medium">
-              <span className="font-bold text-texas-red/80">Market snapshot: </span>
+            <div className={`bg-accent/10 border border-accent/20 border-l-4 ${snapshotBorder} rounded-2xl px-6 py-4 mb-8 text-sm text-foreground/80 font-medium`}>
+              <span className={`font-bold ${snapshotLabel}`}>Market snapshot: </span>
               {data.metroSummary}
             </div>
           )}
@@ -118,7 +133,7 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
       </section>
 
       {/* Demand Drivers */}
-      <section className="py-16 bg-secondary border-b border-border border-t-2 border-t-texas-silver/30">
+      <section className={`py-16 bg-secondary border-b border-border border-t-2 ${demandsDivider}`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
             <Building className="w-6 h-6 text-primary" /> Key Demand Drivers
@@ -200,7 +215,7 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
 
       {/* Why Local Context Matters */}
       {data.localContextNote && (
-        <section className="py-16 bg-background border-b border-border border-t-[3px] border-t-texas-red/20">
+        <section className={`py-16 bg-background border-b border-border ${contextDivider}`}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-display font-bold text-foreground mb-4">
               Why Local Context Matters in {data.name}
