@@ -216,21 +216,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Soft bottom CTA */}
-      <section className="py-20 bg-secondary border-t border-border">
+      {/* Subtle sponsor line */}
+      <section className="py-10 bg-secondary border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-            Need a property-specific view?
-          </h2>
-          <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
-            If you want to understand what your specific property may be losing, what is realistically recoverable, and what an operating change would require, request a property-level parking revenue analysis.
+          <p className="text-sm text-muted-foreground">
+            Powered by Perfect Parking. Property owners who want a parking revenue analysis can{" "}
+            <Link href="/parking-revenue-analysis" className="text-foreground/70 underline underline-offset-2 hover:text-primary transition-colors">
+              contact them here
+            </Link>
+            .
           </p>
-          <Link
-            href="/parking-revenue-analysis"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5"
-          >
-            Request a Revenue Analysis <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
       </section>
     </Layout>

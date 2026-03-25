@@ -73,12 +73,10 @@ export default function VendorsDirectory() {
 
               return (
                 <div key={vendor.id} className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
-                  <div className="flex justify-between items-start mb-2">
+                  <div className="mb-2">
                     <h3 className="font-bold text-base text-foreground">{vendor.company_name}</h3>
                     {vendor.featured && (
-                      <span className="bg-accent/15 text-accent border border-accent/25 text-xs px-2 py-0.5 rounded font-semibold flex-shrink-0 ml-2">
-                        Supporter
-                      </span>
+                      <span className="text-xs text-muted-foreground/55">supporting operator</span>
                     )}
                   </div>
                   <div className="text-xs font-semibold text-muted-foreground/70 mb-3 uppercase tracking-wide">

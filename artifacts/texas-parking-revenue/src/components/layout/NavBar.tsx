@@ -41,12 +41,6 @@ export function NavBar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              href="/parking-revenue-analysis"
-              className="px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 transition-all hover:-translate-y-0.5 active:translate-y-0"
-            >
-              Get Revenue Analysis
-            </Link>
           </nav>
 
           <button
@@ -77,15 +71,6 @@ export function NavBar() {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-2">
-                <Link
-                  href="/parking-revenue-analysis"
-                  onClick={() => setIsOpen(false)}
-                  className="block w-full text-center px-5 py-3 rounded-xl bg-primary text-primary-foreground font-semibold"
-                >
-                  Get Revenue Analysis
-                </Link>
-              </div>
             </div>
           </motion.div>
         )}

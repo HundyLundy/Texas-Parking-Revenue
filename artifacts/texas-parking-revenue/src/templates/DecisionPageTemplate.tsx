@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { MetaTags } from "@/components/seo/MetaTags";
 import { Link } from "wouter";
-import { CheckCircle2, XCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 
 interface KeyFactor { factor: string; detail: string; }
 
@@ -155,22 +155,16 @@ export function DecisionPageTemplate({ id, data }: DecisionPageProps) {
         </div>
       </section>
 
-      {/* Soft CTA */}
-      <section className="py-16 bg-secondary">
+      {/* Subtle sponsor line */}
+      <section className="py-10 bg-secondary border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-display font-bold text-foreground mb-3">
-            How does this apply to your property?
-          </h2>
-          <p className="text-muted-foreground mb-7 leading-relaxed max-w-lg mx-auto text-sm">
-            General frameworks are useful. But the right answer depends on your specific asset, user mix, lease structure, and market. A property-level revenue analysis can give you a clearer picture.
+          <p className="text-sm text-muted-foreground">
+            Powered by Perfect Parking. Property owners who want a parking revenue analysis can{" "}
+            <Link href="/parking-revenue-analysis" className="text-foreground/70 underline underline-offset-2 hover:text-primary transition-colors">
+              contact them here
+            </Link>
+            .
           </p>
-          <Link
-            href="/parking-revenue-analysis"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5"
-          >
-            Request a Revenue Analysis <ArrowRight className="w-4 h-4" />
-          </Link>
-          <p className="mt-3 text-xs text-muted-foreground">Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.</p>
         </div>
       </section>
     </Layout>
