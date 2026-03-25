@@ -1,0 +1,478 @@
+You are a senior product designer, full-stack engineer, SEO strategist, B2B marketer, parking-industry researcher, UX writer, structured-data architect, and database designer.
+
+Build a production-ready MVP website for a Texas-first B2B parking revenue resource hub.
+
+PRIMARY DOMAIN / BRANDING
+Primary live domain: TexasParkingRevenue.com
+Secondary owned domain: TexasParkingManagement.com
+
+IMPORTANT DOMAIN INSTRUCTIONS
+- Build the site with TexasParkingRevenue.com as the canonical primary domain.
+- TexasParkingManagement.com should point to the same project and 301 redirect to TexasParkingRevenue.com.
+- All canonical tags, sitemap entries, internal absolute URLs, Open Graph URLs, schema references, and metadata should use TexasParkingRevenue.com as the canonical source of truth.
+- Make the domain/brand configurable in one central settings file.
+- If needed later, the same site should be able to support additional parked or redirected domains without code rewrites.
+
+CORE SITE PURPOSE
+This is NOT a consumer parking finder.
+This is NOT a generic directory.
+
+This site is a Texas-first B2B parking revenue resource hub for:
+- hotel owners and operators
+- hospital systems and campus operators
+- commercial real estate owners
+- property managers
+- asset managers
+- REITs
+- private equity / hedge fund real estate teams
+- ownership groups with parking assets
+- operators looking to monetize, optimize, or improve parking
+
+This site should attract people searching for:
+- how to monetize parking
+- how to increase parking revenue
+- how to improve parking operations
+- how parking affects NOI
+- how parking affects asset value
+- hotel parking revenue strategy
+- hospital parking management strategy
+- gated vs gateless systems
+- parking enforcement strategy
+- self-managed vs outsourced parking operations
+
+PRIMARY BUSINESS GOAL
+Generate qualified leads for Perfect Parking by becoming the best Texas online resource for parking revenue, parking monetization, and parking management strategy.
+
+SECONDARY GOALS
+- Build a scalable SEO asset
+- Build authority and trust
+- Create a structured database/resource hub that can expand city by city and asset type by asset type
+- Leave room for future monetization via ad slots, sponsor placements, featured listings, and adjacent parking-related advertisers
+- Make Perfect Parking the natural recommended solution without making the site feel like a brochure
+
+POSITIONING
+The site should feel like:
+- a serious Texas parking revenue resource
+- a decision-support platform
+- an operator-grade information hub
+- an executive-friendly research and strategy website
+- useful enough to stand on its own even if someone never converts
+
+The site should NOT feel like:
+- a thin advertorial
+- an affiliate junk site
+- a spammy blog
+- a consumer “find parking” app
+- a generic AI-generated content farm
+
+CORE MESSAGE
+Parking is not just an operational burden.
+It is an under-managed revenue line that can impact:
+- NOI
+- asset value
+- guest experience
+- patient experience
+- enforcement
+- leakage
+- traffic flow
+- portfolio performance
+- operational headaches
+
+The site should naturally reinforce:
+- parking can be a profit center
+- better parking management can increase revenue and reduce friction
+- the right solution depends on property type, use case, and demand pattern
+- parking decisions should be made strategically, not reactively
+
+CONTENT STRATEGY
+We are targeting decision-makers who are actively trying to solve a revenue, management, or operational problem.
+Pages should answer real buyer questions with useful, balanced, structured content.
+This is a people-first content strategy, not keyword stuffing.
+
+SEO / TOPIC CLUSTERS
+Build the site architecture and content around these topic clusters:
+- Texas parking revenue
+- Texas parking management
+- Texas parking monetization
+- parking revenue analysis
+- monetize parking lot
+- increase parking revenue
+- hotel parking revenue
+- hospital parking management
+- commercial real estate parking revenue
+- parking lot management company
+- parking asset management
+- parking and property value
+- parking NOI
+- parking revenue for hotels
+- parking revenue for hospitals
+- gated vs gateless parking
+- self-managed vs outsourced parking
+- parking enforcement strategy
+- Houston parking revenue
+- Dallas parking revenue
+- Austin parking revenue
+- Texas hotel parking management
+- Texas hospital parking strategy
+- parking operator Texas
+- outsourced parking management Texas
+
+SEO REQUIREMENTS
+- Clean URL structure
+- Strong titles and meta descriptions
+- Semantic H1/H2/H3 structure
+- Internal linking between city pages, asset pages, comparison pages, and CTA pages
+- XML sitemap
+- robots.txt
+- canonical tags
+- organization schema
+- breadcrumb schema
+- article schema where relevant
+- FAQ schema where relevant
+- Open Graph tags
+- Twitter tags
+- fast page speed
+- mobile-first responsive design
+- avoid keyword stuffing
+- write clearly enough to be useful for search engines and AI answer engines
+
+PRIMARY SITE ARCHITECTURE
+
+1. Homepage
+2. About / Methodology page
+3. Resource Hub page
+4. Contact / Get a Parking Revenue Analysis page
+
+CITY PAGES
+5. Houston Parking Revenue Guide
+6. Dallas Parking Revenue Guide
+7. Austin Parking Revenue Guide
+
+PROPERTY / ASSET TYPE PAGES
+8. Texas Hotel Parking Revenue Guide
+9. Texas Hospital Parking Management Guide
+10. Texas Commercial Real Estate Parking Revenue Guide
+
+DECISION / COMPARISON PAGES
+11. Self-Managed Parking vs Outsourced Parking Operator
+12. Gated vs Gateless Parking Systems
+13. How Parking Revenue Impacts Property Value
+14. Parking Enforcement: Revenue Protection vs Customer Friction
+15. When Paid Parking Makes Sense for a Property
+16. What Type of Parking Assets Are Best for Monetization
+
+RESOURCE / DATABASE PAGES
+17. Resource Directory Index
+18. City Listing Template
+19. Asset-Type Listing Template
+20. Vendor / Resource Listing Template
+21. Individual Listing Detail Page
+
+RECOMMENDED INITIAL URL SLUGS
+Use these exact or very close slugs unless a cleaner technical structure is better:
+
+Homepage:
+/
+
+Core pages:
+/about
+/methodology
+/resources
+/parking-revenue-analysis
+
+City pages:
+/texas/houston-parking-revenue
+/texas/dallas-parking-revenue
+/texas/austin-parking-revenue
+
+Asset pages:
+/texas/hotel-parking-revenue
+/texas/hospital-parking-management
+/texas/commercial-real-estate-parking-revenue
+
+Decision pages:
+/resources/self-managed-vs-outsourced-parking
+/resources/gated-vs-gateless-parking
+/resources/how-parking-revenue-impacts-property-value
+/resources/parking-enforcement-revenue-vs-friction
+/resources/when-paid-parking-makes-sense
+/resources/best-parking-assets-for-monetization
+
+Resource hub / listings:
+/directory
+/directory/cities
+/directory/property-types
+/directory/vendors
+/directory/[slug]
+
+RATIONALE FOR URL STRUCTURE
+- Keep city and Texas geo intent highly visible
+- Keep revenue/management keywords in slugs
+- Build a reusable structure for future scale
+- Support future expansion to San Antonio, Fort Worth, Corpus Christi, etc.
+- Keep the information architecture easy for both users and crawlers
+
+DATABASE / DATA MODEL
+Create a structured, extensible data layer with realistic placeholder/sample data for Texas.
+
+Use:
+- JSON or structured content files for MVP
+- optionally SQLite if helpful
+- architecture that can later move to Supabase or Postgres easily
+
+PROPERTY RECORD FIELDS
+- id
+- property_name
+- city
+- metro
+- state
+- zip
+- property_type
+- sub_type
+- ownership_type
+- parking_type
+- management_model
+- payment_model
+- estimated_revenue_potential
+- demand_drivers
+- friction_points
+- notes
+- featured
+- slug
+
+CITY RECORD FIELDS
+- city_name
+- metro_summary
+- parking_demand_notes
+- target_property_types
+- nearby_demand_generators
+- major_parking_challenges
+- seo_title
+- meta_description
+- slug
+
+VENDOR / RESOURCE RECORD FIELDS
+- id
+- company_name
+- category
+- service_area
+- short_description
+- website
+- featured
+- slug
+
+CONTENT RULES
+- No fluff
+- No filler
+- No generic AI language
+- No fake certainty
+- No spammy marketing voice
+- Write like a credible industry analyst/operator
+- Add citation/stat placeholders where hard numbers should later be inserted
+- Include “last updated” dates
+- Include author/reviewer modules
+- Include editorial principles and methodology for trust
+
+HOMEPAGE REQUIREMENTS
+The homepage must immediately explain:
+1. what the site is
+2. who it is for
+3. why it matters
+4. what action the visitor should take
+
+Homepage sections:
+- Hero headline + subheadline
+- Primary CTA: Get a Parking Revenue Analysis
+- Secondary CTA: Explore Texas Parking Resources
+- “Who this is for” section
+- “Why parking matters to NOI, asset value, guest experience, and patient experience” section
+- Featured city pages
+- Featured asset-type pages
+- Featured decision guides
+- Featured resources / listings
+- Subtle Perfect Parking recommendation block
+- Optional sponsor/ad block
+- Footer with contact, legal, resource links, and configurable promo components
+
+HERO COPY DIRECTION
+Test headlines like:
+- Turn Parking Into a Stronger Revenue Line
+- Texas Parking Revenue Starts With Better Management
+- Parking Revenue Strategy for Texas Property Owners
+- Better Parking Management. Better NOI.
+
+Subheadline direction:
+Texas-focused parking revenue guidance for owners and operators who want to increase income, reduce friction, and make smarter parking decisions.
+
+CITY PAGE TEMPLATE REQUIREMENTS
+For Houston, Dallas, and Austin:
+- city parking overview
+- why parking matters there
+- common owner/operator questions
+- major demand drivers
+- best-fit property types
+- monetization opportunities
+- operational risks
+- links to related asset pages
+- CTA to Perfect Parking
+
+ASSET PAGE TEMPLATE REQUIREMENTS
+For hotels, hospitals, and commercial real estate:
+- why this asset class handles parking differently
+- common pain points
+- monetization opportunities
+- operational/experience risks
+- management models
+- relevant technologies and systems
+- FAQ section
+- CTA to Perfect Parking
+
+DECISION PAGE TEMPLATE REQUIREMENTS
+Use balanced, useful, executive-friendly content:
+- overview
+- pros and cons table
+- best fit when…
+- common mistakes
+- implementation considerations
+- CTA
+
+RESOURCE HUB REQUIREMENTS
+Create a clean resource index grouped by:
+- city
+- property type
+- decision topic
+- systems / technology
+- vendor/resource category
+
+PERFECT PARKING INTEGRATION
+Perfect Parking should appear as the preferred solution in a tasteful way:
+- recommended operator blocks
+- “when to talk to an operator” sections
+- CTA destinations
+- footer branding
+- subtle sponsor/recommended provider modules
+- in-content callouts where relevant
+
+The site should still feel useful and credible even if someone ignores every CTA.
+
+OPTIONAL PERFECT WATER VALVE INTEGRATION
+Include one optional sponsor/promo component that can later display Perfect Water Valve or another adjacent business.
+Make it configurable and easy to turn off.
+
+MONETIZATION READINESS
+Build optional placeholders/components for:
+- header sponsor
+- in-content sponsor
+- sidebar sponsor
+- footer sponsor
+- featured vendor cards
+- premium listing badge
+
+These should not dominate the layout.
+Preserve UX, readability, and speed.
+
+DESIGN DIRECTION
+The site should feel:
+- modern
+- clean
+- sharp
+- credible
+- B2B
+- executive-friendly
+- easy to skim
+- fast
+- mobile responsive
+
+Use:
+- strong typography
+- clear spacing
+- reusable components
+- restrained color palette
+- no gimmicks
+- no clutter
+- no visual noise
+
+TECH STACK
+Use the fastest, simplest stack Replit handles well.
+
+Preferred:
+- Next.js
+- Tailwind CSS
+- static generation or hybrid rendering
+- modular components
+- structured content files where helpful
+
+Avoid a bloated CMS unless truly necessary.
+
+ANALYTICS / CONVERSION HOOKS
+Add easy config hooks/placeholders for:
+- GA4
+- Google Search Console verification
+- Meta pixel optional
+- call tracking optional
+- HubSpot forms optional
+- outbound click tracking for sponsor and vendor cards
+
+IMPORTANT TECHNICAL SEO INSTRUCTIONS
+- Use TexasParkingRevenue.com as the canonical domain everywhere
+- Implement redirect handling notes for TexasParkingManagement.com
+- Ensure internal linking reinforces the city-to-asset-to-decision-to-conversion pathway
+- Make each page indexable unless intentionally excluded
+- Generate sitemap.xml with all starter pages
+- Include robots.txt
+- Include canonical tags on every page
+- Support future programmatic page generation
+
+LEAD GEN STRATEGY
+Every major page should include at least one clear CTA such as:
+- Get a Parking Revenue Analysis
+- Talk to Perfect Parking
+- Request a Texas parking review
+- See how much revenue your parking asset may be leaving on the table
+
+Lead form fields:
+- name
+- company
+- email
+- phone
+- portfolio or property name
+- city
+- property type
+- number of spaces
+- current parking setup
+- main problem to solve
+- optional notes
+
+SCALE PREP
+Structure the site so it can later expand easily to:
+- San Antonio
+- Fort Worth
+- Corpus Christi
+- additional asset classes
+- additional decision guides
+- more city pages
+- more vendor/resource pages
+without major refactoring
+
+REQUIRED OUTPUT
+1. Build the full MVP site structure and codebase
+2. Populate it with realistic placeholder copy and sample Texas data
+3. Create reusable templates and components
+4. Generate metadata, schema, sitemap, robots, and SEO plumbing
+5. Add comments showing where to insert real stats, citations, ads, sponsor links, and Perfect Parking URLs
+6. Create a README explaining:
+   - project overview
+   - structure
+   - deployment
+   - adding pages/cities/listings
+   - editing brand/domain settings
+   - connecting forms and analytics
+   - handling the secondary domain redirect
+
+START ORDER
+1. scaffold the architecture
+2. build the data model
+3. build homepage and page templates
+4. populate MVP starter content
+5. implement SEO and schema
+6. generate README

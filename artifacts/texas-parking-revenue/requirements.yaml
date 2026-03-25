@@ -1,0 +1,19 @@
+packages:
+  "react-helmet-async": "SEO meta tags management"
+  "framer-motion": "Buttery smooth animations and page transitions"
+  "react-hook-form": "Form state management"
+  "@hookform/resolvers": "Zod schema validation for forms"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for safely merging tailwind classes"
+
+images:
+  - path: "artifacts/texas-parking-revenue/public/images/hero-bg.png"
+    description: "Abstract architectural glass and steel reflection, dark corporate navy blue and gold accent, subtle lighting, modern B2B background, high end"
+    aspect_ratio: "16:9"
+  - path: "artifacts/texas-parking-revenue/public/images/pattern-bg.png"
+    description: "Subtle geometric grid and dot pattern in light gray and white for section backgrounds, extremely minimal and clean"
+    aspect_ratio: "16:9"
+
+notes:
+  - "Import React Query hooks exactly from @workspace/api-client-react/src/generated/api"
+  - "Assuming Wouter is used for routing and BASE_URL is respected"

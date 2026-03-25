@@ -1,15 +1,18 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: Texas Parking Revenue API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: leads
+    description: Lead generation operations
+  - name: directory
+    description: Directory and resource listings
 paths:
   /healthz:
     get:
@@ -24,6 +27,80 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /leads:
+    post:
+      operationId: submitLead
+      tags: [leads]
+      summary: Submit a parking revenue analysis lead
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LeadSubmission"
+      responses:
+        "201":
+          description: Lead submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LeadResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /directory/properties:
+    get:
+      operationId: listProperties
+      tags: [directory]
+      summary: List property records
+      parameters:
+        - name: city
+          in: query
+          schema:
+            type: string
+        - name: property_type
+          in: query
+          schema:
+            type: string
+        - name: featured
+          in: query
+          schema:
+            type: boolean
+      responses:
+        "200":
+          description: List of properties
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Property"
+  /directory/vendors:
+    get:
+      operationId: listVendors
+      tags: [directory]
+      summary: List vendor/resource records
+      parameters:
+        - name: category
+          in: query
+          schema:
+            type: string
+        - name: featured
+          in: query
+          schema:
+            type: boolean
+      responses:
+        "200":
+          description: List of vendors
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Vendor"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +110,118 @@ components:
           type: string
       required:
         - status
-
+    LeadSubmission:
+      type: object
+      properties:
+        name:
+          type: string
+        company:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        portfolio_name:
+          type: string
+        city:
+          type: string
+        property_type:
+          type: string
+        message:
+          type: string
+      required:
+        - name
+        - email
+        - city
+        - property_type
+    LeadResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        id:
+          type: integer
+      required:
+        - success
+        - message
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+      required:
+        - error
+    Property:
+      type: object
+      properties:
+        id:
+          type: integer
+        property_name:
+          type: string
+        city:
+          type: string
+        metro:
+          type: string
+        state:
+          type: string
+        zip:
+          type: string
+        property_type:
+          type: string
+        sub_type:
+          type: string
+        ownership_type:
+          type: string
+        parking_type:
+          type: string
+        management_model:
+          type: string
+        payment_model:
+          type: string
+        estimated_revenue_potential:
+          type: string
+        demand_drivers:
+          type: string
+        friction_points:
+          type: string
+        notes:
+          type: string
+        featured:
+          type: boolean
+        slug:
+          type: string
+      required:
+        - id
+        - property_name
+        - city
+        - property_type
+        - slug
+    Vendor:
+      type: object
+      properties:
+        id:
+          type: integer
+        company_name:
+          type: string
+        category:
+          type: string
+        service_area:
+          type: string
+        short_description:
+          type: string
+        website:
+          type: string
+        featured:
+          type: boolean
+        slug:
+          type: string
+      required:
+        - id
+        - company_name
+        - category
+        - slug

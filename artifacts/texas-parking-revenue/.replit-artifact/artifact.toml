@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Texas Parking Revenue"
+version = "1.0.0"
+id = "artifacts/texas-parking-revenue"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25256
+
+[services.development]
+run = "pnpm --filter @workspace/texas-parking-revenue run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/texas-parking-revenue", "run", "build" ]
+publicDir = "artifacts/texas-parking-revenue/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25256"
+BASE_PATH = "/"
