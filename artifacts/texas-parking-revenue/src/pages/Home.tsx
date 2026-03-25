@@ -29,7 +29,7 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="relative pt-24 pb-28 lg:pt-32 lg:pb-36 overflow-hidden">
+      <section className="relative pt-20 pb-20 lg:pt-28 lg:pb-28 overflow-hidden">
         <div
           className="absolute inset-0 z-[-1]"
           style={{
@@ -38,8 +38,8 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-primary/92 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/60 to-background" />
+          <div className="absolute inset-0 bg-primary/97 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-background" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
             <Link
               href="/resources"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 border border-white/25 text-white font-semibold text-base hover:bg-white/20 backdrop-blur-md transition-all"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white text-primary font-bold text-base hover:bg-white/90 transition-all hover:shadow-xl hover:shadow-black/20 hover:-translate-y-0.5"
             >
               Browse the Guides <ArrowRight className="w-4 h-4" />
             </Link>
@@ -129,7 +129,7 @@ export default function Home() {
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-md hover:-translate-y-0.5"
+                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-lg hover:-translate-y-1"
                   >
                     <div className="flex justify-between items-center">
                       <div>
@@ -140,7 +140,7 @@ export default function Home() {
                           {city.description}
                         </p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1.5 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}
@@ -158,7 +158,7 @@ export default function Home() {
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-md hover:-translate-y-0.5"
+                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-lg hover:-translate-y-1"
                   >
                     <div className="flex justify-between items-center">
                       <div>
@@ -169,7 +169,7 @@ export default function Home() {
                           {asset.description}
                         </p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1.5 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}
@@ -196,7 +196,7 @@ export default function Home() {
               <Link
                 key={key}
                 href={`/resources/${key}`}
-                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:shadow-md hover:-translate-y-1 hover:border-accent/30 transition-all group"
+                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-accent/30 transition-all group"
               >
                 <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors leading-snug">
                   {item.title}

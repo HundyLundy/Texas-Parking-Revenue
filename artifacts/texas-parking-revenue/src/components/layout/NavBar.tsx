@@ -34,8 +34,8 @@ export function NavBar() {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-accent",
-                  location === link.href ? "text-primary" : "text-muted-foreground"
+                  "text-sm font-semibold transition-colors hover:text-accent",
+                  location === link.href ? "text-primary" : "text-foreground/65"
                 )}
               >
                 {link.name}
