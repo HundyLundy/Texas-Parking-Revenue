@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { MetaTags } from "@/components/seo/MetaTags";
 import { FAQAccordion } from "@/components/shared/FAQAccordion";
 import { Link } from "wouter";
-import { MapPin, Building, TrendingUp, AlertTriangle, DollarSign, ArrowRight, Calendar, ExternalLink } from "lucide-react";
+import { MapPin, Building, TrendingUp, AlertTriangle, DollarSign, ArrowRight, Calendar } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 interface CityData {
@@ -238,28 +238,41 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
       )}
 
       {/* Sponsored Listing — Perfect Parking */}
-      <section className="py-10 bg-background">
+      <section className="py-12 bg-secondary/40 border-t border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/45 mb-2">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/40 mb-3 text-center">
             Sponsored Listing
           </p>
-          <div className="border border-border rounded-xl px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-secondary/50">
-            <div>
-              <p className="font-semibold text-foreground text-sm">
-                {siteConfig.perfectParkingName}
-              </p>
-              <p className="text-sm text-muted-foreground mt-0.5 max-w-lg">
-                Texas-based parking management for hotels, hospitals, and commercial properties. Specializes in outsourced operations, enforcement, and revenue analysis.
-              </p>
+          <div className="bg-card border border-border rounded-2xl shadow-sm overflow-hidden">
+            <div className="px-8 py-6 flex flex-col sm:flex-row sm:items-center gap-6">
+              {/* Logo */}
+              <div className="flex-shrink-0">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/perfect-parking-logo.webp`}
+                  alt="Perfect Parking"
+                  className="h-14 w-auto object-contain rounded-lg"
+                />
+              </div>
+              {/* Description */}
+              <div className="flex-1 min-w-0">
+                <p className="font-bold text-foreground text-base">
+                  {siteConfig.perfectParkingName}
+                </p>
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                  Texas-based parking management company serving hotels, hospital campuses, and commercial real estate owners. Specializes in outsourced operations, enforcement programs, and property-specific revenue analysis.
+                </p>
+              </div>
+              {/* CTA */}
+              <div className="flex-shrink-0">
+                <Link
+                  href="/parking-revenue-analysis"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-primary-foreground text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm whitespace-nowrap"
+                >
+                  Get your free revenue analysis
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
-            <a
-              href={siteConfig.perfectParkingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors"
-            >
-              Visit website <ExternalLink className="w-3.5 h-3.5" />
-            </a>
           </div>
         </div>
       </section>

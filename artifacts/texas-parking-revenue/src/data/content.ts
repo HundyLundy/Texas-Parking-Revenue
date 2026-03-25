@@ -322,7 +322,7 @@ export const decisions = {
       { factor: "Enforcement environment", detail: "If your market requires active LPR enforcement and citation processing, outsourcing to an operator with existing infrastructure is usually lower total cost than building it internally." },
       { factor: "Investment horizon", detail: "If you're planning to sell in under 3 years, a management agreement provides cleaner financials with documented revenue history — potentially improving your sale valuation." },
     ],
-    bottomLine: "For most Texas commercial assets above 300 spaces, a well-structured outsourced management agreement produces better risk-adjusted NOI than self-management. The exception is simple, single-use facilities with strong in-house operations teams.",
+    bottomLine: "For most Texas hotel, hospital, and commercial real estate owners, outsourcing produces better NOI than self-management — not because self-management is inherently flawed, but because running parking well is specialized work. The management fee is typically recovered in the first year through revenue improvements and leakage reduction. Self-management makes sense in a narrow band: small, simple assets with stable demand that ownership is already managing competently. Once complexity enters the picture, an experienced operator almost always produces the better net outcome.",
   },
   "gated-vs-gateless-parking": {
     title: "Gated vs. Gateless Parking Systems",

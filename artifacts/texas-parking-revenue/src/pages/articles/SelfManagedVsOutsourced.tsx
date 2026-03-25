@@ -21,7 +21,7 @@ export default function SelfManagedVsOutsourced() {
       lastUpdated="March 2026"
       shortAnswer={
         <p>
-          Neither model is universally better. Self-management works reasonably well for simple, stable assets with modest parking revenue and a capable in-house team. Outsourcing tends to outperform when parking is a meaningful revenue line, operations are under-optimized, or the complexity of the asset — multi-user, high-volume, enforcement-heavy — exceeds what in-house staff can effectively manage. The comparison that matters is net NOI, not management fees.
+          For most Texas commercial assets, outsourcing produces better net results — not because in-house management is inherently flawed, but because running parking well is genuinely specialized work. Self-management makes sense in a narrow range of situations: small, simple lots with stable demand and a capable in-house team already handling it competently. Outside of that, the management fee paid to an experienced operator is typically recovered within the first year through revenue improvements alone. The comparison that matters is net NOI, not management fees.
         </p>
       }
       sources={[
@@ -109,10 +109,13 @@ export default function SelfManagedVsOutsourced() {
 
       <h2>Bottom line</h2>
       <p>
-        The management model question only has a right answer in context. Self-management works when operations are genuinely simple and well-run. Outsourcing tends to outperform when there's operational complexity the in-house team isn't equipped to handle, or when parking revenue is large enough that getting it right has a real asset-level impact.
+        Most Texas hotel, healthcare, and commercial real estate owners are better served by an experienced outsourced operator than by running parking in-house — even when the in-house option looks cheaper on paper. Parking is one of those functions where the gap between "competent" and "well-managed" is large, and that gap shows up directly in NOI.
       </p>
       <p>
-        The fee comparison is a starting point, not the answer. The answer comes from evaluating net NOI across all costs, under real-world conditions, at your specific asset.
+        The case for self-management is real but narrow. It applies to genuinely simple operations — a small surface lot, one user type, minimal enforcement demands — where the complexity ceiling never gets hit. Once you're past that, you're paying the full cost of managing parking yourself without the benefit of the systems, relationships, and experience a dedicated operator brings. That's usually the worse trade, not the better one.
+      </p>
+      <p>
+        If the reason for staying in-house is primarily to avoid the management fee, that's worth stress-testing. In most cases, a well-run outsourced program closes the gap — and usually exceeds it — within the first year. You also get your management team's time back, which has its own value.
       </p>
       <p>
         Related reading: <Link href="/resources/parking-management-rfp-guide" className="text-primary hover:underline">what a parking management RFP should include</Link>, and the broader context in the <Link href="/texas/hotel-parking-revenue" className="text-primary hover:underline">Texas hotel parking guide</Link> or <Link href="/texas/commercial-real-estate-parking-revenue" className="text-primary hover:underline">commercial real estate parking guide</Link>.
