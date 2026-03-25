@@ -73,6 +73,8 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
             <div>
+              {/* Thin red accent line above eyebrow */}
+              <div className="w-10 h-[3px] bg-texas-red rounded-full mb-3" />
               <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">The resource library</p>
               <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
                 Guides for Texas parking owners

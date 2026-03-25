@@ -71,7 +71,9 @@ export function NavBar() {
   }, [location]);
 
   return (
-    <header ref={ref} className="sticky top-0 z-50 w-full glass-panel border-b border-border/50">
+    <header ref={ref} className="sticky top-0 z-50 w-full glass-panel">
+      {/* Texas accent line — silver to red gradient */}
+      <div className="h-[2px] w-full bg-gradient-to-r from-texas-silver via-texas-red/70 to-transparent" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 

@@ -5,6 +5,10 @@
   --font-sans: 'Hanken Grotesk', sans-serif;
   --font-display: 'Bricolage Grotesque', sans-serif;
 
+  /* Texas accent colors */
+  --color-texas-red: #C8102E;
+  --color-texas-silver: #A5ACAF;
+
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   

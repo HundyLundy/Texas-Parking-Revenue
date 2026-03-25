@@ -60,8 +60,8 @@ export function ArticlePageTemplate({
 
       {/* Short answer */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-        <div className="bg-secondary border border-border rounded-xl px-6 py-5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2">Short answer</p>
+        <div className="bg-secondary border border-border rounded-xl px-6 py-5 border-l-4 border-l-texas-red">
+          <p className="text-xs font-semibold uppercase tracking-widest text-texas-red/70 mb-2">Short answer</p>
           <div className="text-foreground/85 leading-relaxed text-[0.97rem]">{shortAnswer}</div>
         </div>
       </section>
@@ -72,7 +72,7 @@ export function ArticlePageTemplate({
       </article>
 
       {/* Sources */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 border-t border-border pt-8">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 border-t-2 border-t-texas-silver/40 pt-8">
         <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/55 mb-3">Sources</p>
         <ul className="space-y-1">
           {sources.map((s, i) => (

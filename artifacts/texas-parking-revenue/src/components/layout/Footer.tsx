@@ -5,7 +5,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground border-t border-white/10">
+    <footer className="bg-primary text-primary-foreground">
+      {/* Silver-to-red Texas accent strip */}
+      <div className="h-[3px] w-full bg-gradient-to-r from-texas-silver/60 via-texas-red/80 to-texas-silver/30" />
       <div className="pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
