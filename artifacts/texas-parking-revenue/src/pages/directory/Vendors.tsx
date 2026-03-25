@@ -3,6 +3,10 @@ import { MetaTags } from "@/components/seo/MetaTags";
 import { useListVendors } from "@workspace/api-client-react";
 import { Users, Globe } from "lucide-react";
 
+const vendorWebsites: Record<string, string> = {
+  "perfect-parking": "https://www.perfectparking.com",
+};
+
 const vendorDescriptions: Record<string, string> = {
   "perfect-parking":
     "Texas-focused parking operator and revenue optimization partner for hotels, hospitals, and commercial properties, with emphasis on outsourced operations, enforcement strategy, and asset-level analysis.",
@@ -70,6 +74,8 @@ export default function VendorsDirectory() {
             {vendors?.map(vendor => {
               const overrideDesc = vendorDescriptions[vendor.slug ?? ""];
               const description = overrideDesc ?? vendor.short_description ?? "No description provided.";
+              const overrideWebsite = vendorWebsites[vendor.slug ?? ""];
+              const website = overrideWebsite ?? vendor.website;
 
               return (
                 <div key={vendor.id} className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
@@ -85,9 +91,9 @@ export default function VendorsDirectory() {
                   <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                     {description}
                   </p>
-                  {vendor.website && vendor.website !== "#" && (
+                  {website && website !== "#" && (
                     <a
-                      href={vendor.website}
+                      href={website}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-sm text-primary hover:text-accent transition-colors font-medium"
