@@ -6,12 +6,14 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground border-t border-white/10">
-
-      {/* Main footer links */}
-      <div className="pt-14 pb-8">
+      <div className="pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-1 md:col-span-1">
+
+          {/* Top row: brand + columns */}
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mb-12">
+
+            {/* Brand */}
+            <div className="col-span-2">
               <Link href="/" className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-accent-foreground font-display font-bold text-xl">
                   TX
@@ -20,20 +22,97 @@ export function Footer() {
                   ParkingRevenue
                 </span>
               </Link>
-              <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-                Parking guides and decision resources for Texas property owners evaluating revenue, operations, and technology.
+              <p className="text-primary-foreground/60 text-sm leading-relaxed mb-5 max-w-xs">
+                Market guides, decision frameworks, and operational analysis for Texas hotel, healthcare, and commercial real estate owners evaluating parking as a revenue line.
               </p>
-              <p className="text-xs text-primary-foreground/40">
+              <p className="text-xs text-primary-foreground/40 leading-relaxed">
                 Supported by{" "}
-                <a href={siteConfig.perfectParkingUrl} className="text-accent hover:underline">
+                <a
+                  href={siteConfig.perfectParkingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
                   {siteConfig.perfectParkingName}
                 </a>
+                {" "}— a Texas parking management company. Content is for general information only and is not legal, tax, or investment advice.
               </p>
             </div>
 
+            {/* In-Depth Guides */}
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Texas Cities</h3>
-              <ul className="space-y-3 text-sm text-primary-foreground/70">
+              <h3 className="font-semibold text-xs uppercase tracking-widest mb-5 text-primary-foreground/45">
+                In-Depth Guides
+              </h3>
+              <ul className="space-y-2.5 text-sm text-primary-foreground/65">
+                <li>
+                  <Link href="/resources/should-texas-hotels-charge-for-parking" className="hover:text-accent transition-colors leading-snug block">
+                    Should Hotels Charge for Parking?
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/self-managed-vs-outsourced-parking-noi" className="hover:text-accent transition-colors leading-snug block">
+                    Self-Managed vs. Outsourced: NOI
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/parking-management-rfp-guide" className="hover:text-accent transition-colors leading-snug block">
+                    Parking Management RFP Guide
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/gated-vs-gateless-parking-roi" className="hover:text-accent transition-colors leading-snug block">
+                    Gated vs. Gateless ROI
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/when-should-a-hospital-outsource-parking-management" className="hover:text-accent transition-colors leading-snug block">
+                    Hospital Parking Outsourcing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Decision Analysis */}
+            <div>
+              <h3 className="font-semibold text-xs uppercase tracking-widest mb-5 text-primary-foreground/45">
+                Decision Analysis
+              </h3>
+              <ul className="space-y-2.5 text-sm text-primary-foreground/65">
+                <li>
+                  <Link href="/resources/self-managed-vs-outsourced-parking" className="hover:text-accent transition-colors leading-snug block">
+                    Self-Managed vs. Outsourced
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/gated-vs-gateless-parking" className="hover:text-accent transition-colors leading-snug block">
+                    Gated vs. Gateless Systems
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/how-parking-revenue-impacts-property-value" className="hover:text-accent transition-colors leading-snug block">
+                    Parking & Property Value
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/parking-enforcement-revenue-vs-friction" className="hover:text-accent transition-colors leading-snug block">
+                    Enforcement vs. Friction
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/when-paid-parking-makes-sense" className="hover:text-accent transition-colors leading-snug block">
+                    When Paid Parking Makes Sense
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Texas Markets */}
+            <div>
+              <h3 className="font-semibold text-xs uppercase tracking-widest mb-5 text-primary-foreground/45">
+                Texas Markets
+              </h3>
+              <ul className="space-y-2.5 text-sm text-primary-foreground/65">
                 <li>
                   <Link href="/texas/houston-parking-revenue" className="hover:text-accent transition-colors">
                     Houston
@@ -50,11 +129,11 @@ export function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
 
-            <div>
-              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Asset Types</h3>
-              <ul className="space-y-3 text-sm text-primary-foreground/70">
+              <h3 className="font-semibold text-xs uppercase tracking-widest mt-8 mb-5 text-primary-foreground/45">
+                Asset Types
+              </h3>
+              <ul className="space-y-2.5 text-sm text-primary-foreground/65">
                 <li>
                   <Link href="/texas/hotel-parking-revenue" className="hover:text-accent transition-colors">
                     Hotels & Hospitality
@@ -73,43 +152,54 @@ export function Footer() {
               </ul>
             </div>
 
+            {/* Site */}
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Resources</h3>
-              <ul className="space-y-3 text-sm text-primary-foreground/70">
+              <h3 className="font-semibold text-xs uppercase tracking-widest mb-5 text-primary-foreground/45">
+                Site
+              </h3>
+              <ul className="space-y-2.5 text-sm text-primary-foreground/65">
                 <li>
-                  <Link href="/resources/self-managed-vs-outsourced-parking" className="hover:text-accent transition-colors">
-                    Self-Managed vs. Outsourced
+                  <Link href="/resources" className="hover:text-accent transition-colors">
+                    All Resources
                   </Link>
                 </li>
                 <li>
-                  <Link href="/resources/gated-vs-gateless-parking" className="hover:text-accent transition-colors">
-                    Gated vs. Gateless
+                  <Link href="/directory/vendors" className="hover:text-accent transition-colors">
+                    Vendor Directory
                   </Link>
                 </li>
                 <li>
-                  <Link href="/directory" className="hover:text-accent transition-colors">
-                    Provider Directory
+                  <Link href="/directory/properties" className="hover:text-accent transition-colors">
+                    Property Profiles
                   </Link>
                 </li>
                 <li>
                   <Link href="/about" className="hover:text-accent transition-colors">
-                    About
+                    About This Site
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/parking-revenue-analysis" className="hover:text-accent transition-colors">
+                    Revenue Analysis
                   </Link>
                 </li>
               </ul>
             </div>
+
           </div>
 
-          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/40">
+          {/* Bottom bar */}
+          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/35">
             <p>
               &copy; {currentYear} {siteConfig.siteName}. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <span className="hover:text-white cursor-pointer">Privacy Policy</span>
-              <span className="hover:text-white cursor-pointer">Terms of Service</span>
+            <div className="flex gap-6 items-center">
               <span>Updated March 2026</span>
+              <span className="text-primary-foreground/20">·</span>
+              <span>Texas Parking Revenue is not affiliated with any municipality or regulatory body.</span>
             </div>
           </div>
+
         </div>
       </div>
     </footer>

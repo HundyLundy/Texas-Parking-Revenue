@@ -81,12 +81,17 @@ export default function Home() {
                 Decision analysis, in-depth operational guides, and market research — organized by topic. These are the questions that come up most often when owners start treating parking as a revenue line.
               </p>
             </div>
-            <Link
-              href="/resources"
-              className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors"
-            >
-              Full resource hub <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex items-center gap-4 flex-shrink-0">
+              <span className="text-xs font-semibold text-muted-foreground bg-secondary border border-border px-3 py-1 rounded-full">
+                10 guides
+              </span>
+              <Link
+                href="/resources"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors"
+              >
+                Full resource hub <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-10">
