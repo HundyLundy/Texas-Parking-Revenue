@@ -229,7 +229,7 @@ export default function Home() {
             Request a Revenue Analysis <ArrowRight className="w-4 h-4" />
           </Link>
           <p className="mt-4 text-xs text-muted-foreground">
-            Facilitated by Perfect Parking — a Texas-based parking management operator.
+            Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.
           </p>
         </div>
       </section>

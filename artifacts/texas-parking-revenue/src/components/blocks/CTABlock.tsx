@@ -41,7 +41,7 @@ export function CTABlock({
               </Link>
             </div>
             <p className="text-sm text-primary-foreground/40">
-              Handled by Perfect Parking. No sales pressure, no spam.
+              Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.
             </p>
           </div>
         </div>

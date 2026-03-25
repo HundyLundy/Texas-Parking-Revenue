@@ -1,30 +1,21 @@
 import { Link } from "wouter";
 import { siteConfig } from "@/config/site";
-import { PhoneCall } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-primary text-primary-foreground border-t border-white/10">
-      {/* Perfect Parking ad strip */}
-      <div className="border-b border-white/10 bg-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-accent mb-1">Presented by</p>
-              <p className="text-2xl font-display font-bold text-white">Perfect Parking</p>
-              <p className="text-sm text-primary-foreground/60 mt-1 max-w-sm">
-                Texas's go-to parking operator for hotels, healthcare campuses, and commercial real estate. They wrote a lot of what you read on this site.
-              </p>
-            </div>
-            <Link
-              href="/parking-revenue-analysis"
-              className="flex-shrink-0 flex items-center gap-2 px-7 py-3.5 rounded-xl bg-accent text-accent-foreground font-bold text-sm hover:bg-accent/90 transition-all hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5"
-            >
-              <PhoneCall className="w-4 h-4" /> Talk to Their Team
+      {/* Subtle Perfect Parking attribution */}
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <p className="text-xs text-primary-foreground/45 text-center">
+            Powered by{" "}
+            <Link href="/parking-revenue-analysis" className="text-primary-foreground/60 hover:text-accent transition-colors underline underline-offset-2">
+              Perfect Parking
             </Link>
-          </div>
+            . If you want help evaluating your property, contact them for a parking revenue analysis.
+          </p>
         </div>
       </div>
 
