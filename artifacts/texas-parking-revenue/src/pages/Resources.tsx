@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { MetaTags } from "@/components/seo/MetaTags";
 import { Link } from "wouter";
-import { ArrowRight, Scale, MapPin, Building2 } from "lucide-react";
+import { ArrowRight, Scale, MapPin, Building2, BookOpen } from "lucide-react";
 import { decisions, cities, assets } from "@/data/content";
 
 const resourcesSchema = {
@@ -64,6 +64,62 @@ export default function Resources() {
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{item.description}</p>
                 <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-accent transition-colors">
                   Read analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* In-Depth Articles */}
+      <section className="py-16 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3 mb-2">
+            <BookOpen className="w-5 h-5 text-accent" />
+            <h2 className="text-2xl font-display font-bold text-foreground">In-Depth Guides</h2>
+          </div>
+          <p className="text-muted-foreground text-sm mb-10 ml-8">
+            Longer-form analysis on specific operational and strategic questions for Texas hotel, healthcare, and commercial property owners.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                href: "/resources/should-texas-hotels-charge-for-parking",
+                title: "Should a Texas Hotel Charge for Parking?",
+                description: "When paid parking improves hotel NOI and when it creates more friction than it's worth.",
+              },
+              {
+                href: "/resources/self-managed-vs-outsourced-parking-noi",
+                title: "Self-Managed vs. Outsourced Parking: Which Produces More NOI?",
+                description: "A comparison through the lens of net operating income, leakage, staffing, and reporting.",
+              },
+              {
+                href: "/resources/parking-management-rfp-guide",
+                title: "What Should a Parking Management RFP Include?",
+                description: "How to structure a vendor evaluation process that compares operators on substance, not just price.",
+              },
+              {
+                href: "/resources/gated-vs-gateless-parking-roi",
+                title: "Gated vs. Gateless Parking: Where Does the ROI Actually Come From?",
+                description: "Comparing gated and gateless systems on revenue capture, friction, maintenance, and enforcement tradeoffs.",
+              },
+              {
+                href: "/resources/when-should-a-hospital-outsource-parking-management",
+                title: "When Should a Hospital Outsource Parking Management?",
+                description: "A practical guide for healthcare systems weighing outsourced management against in-house operations.",
+              },
+            ].map((article) => (
+              <Link
+                key={article.href}
+                href={article.href}
+                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:border-accent/30 hover:shadow-md hover:-translate-y-0.5 transition-all group"
+              >
+                <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors leading-snug">
+                  {article.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">{article.description}</p>
+                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-accent transition-colors">
+                  Read guide <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}

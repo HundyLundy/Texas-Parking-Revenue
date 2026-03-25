@@ -14,6 +14,12 @@ import { HoustonCity, AustinCity, CorpusChristiCity } from "@/pages/cities";
 import { HotelAsset, HospitalAsset, CommercialREAsset } from "@/pages/assets";
 import { DecisionPage } from "@/pages/decisions";
 
+import HotelChargeParking from "@/pages/articles/HotelChargeParking";
+import SelfManagedVsOutsourced from "@/pages/articles/SelfManagedVsOutsourced";
+import ParkingRFPGuide from "@/pages/articles/ParkingRFPGuide";
+import GatedVsGateless from "@/pages/articles/GatedVsGateless";
+import HospitalOutsourcing from "@/pages/articles/HospitalOutsourcing";
+
 import NotFound from "@/pages/not-found";
 import { decisions } from "@/data/content";
 
@@ -42,6 +48,13 @@ function Router() {
       <Route path="/texas/hospital-parking-management" component={HospitalAsset} />
       <Route path="/texas/commercial-real-estate-parking-revenue" component={CommercialREAsset} />
       
+      {/* Standalone article pages */}
+      <Route path="/resources/should-texas-hotels-charge-for-parking" component={HotelChargeParking} />
+      <Route path="/resources/self-managed-vs-outsourced-parking-noi" component={SelfManagedVsOutsourced} />
+      <Route path="/resources/parking-management-rfp-guide" component={ParkingRFPGuide} />
+      <Route path="/resources/gated-vs-gateless-parking-roi" component={GatedVsGateless} />
+      <Route path="/resources/when-should-a-hospital-outsource-parking-management" component={HospitalOutsourcing} />
+
       {/* Decisions dynamic route */}
       <Route path="/resources/:slug">
         {(params) => {

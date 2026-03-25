@@ -1,0 +1,60 @@
+Please create 2 additional full resource pages using the same style rules as the existing resource articles.
+
+GLOBAL RULES
+- These must read like serious industry resource articles, not sales pages.
+- Each page should be roughly 900–1,500 words.
+- Put a short-answer summary at the top.
+- Add “Last updated” near the title.
+- Add a sources section at the bottom.
+- Add one subtle footer note only:
+  “Supported by Perfect Parking. This page is for general information and is not legal, tax, or investment advice.”
+- No top-of-page CTA button.
+- No repeated sales CTAs inside the article.
+- Only a subtle text line at the bottom mentioning Perfect Parking.
+- Add internal links to /resources, /about, and /parking-revenue-analysis where appropriate.
+- Use a calm, credible, operator-friendly tone.
+- Keep them balanced and useful, not promotional.
+
+PAGE 4
+Slug: /resources/gated-vs-gateless-parking-roi
+Title tag: Gated vs Gateless Parking: Where Does the ROI Actually Come From? | Texas Parking Revenue
+Meta description: A practical guide to comparing gated and gateless parking systems based on revenue capture, customer friction, operating cost, and enforcement tradeoffs.
+H1: Gated vs. Gateless Parking: Where Does the ROI Actually Come From?
+
+Structure:
+- short answer
+- what owners mean by gated vs. gateless
+- where gateless systems can improve ROI
+- where gated systems still have advantages
+- the real friction and enforcement tradeoffs
+- how to evaluate ROI by asset type
+- bottom line
+- sources
+
+Must include:
+- gateless systems are increasingly promoted for lower hardware burden, smoother entry/exit, and digital enforcement
+- clearly distinguish vendor claims from generally accepted operational advantages
+- mention that gateless does not remove the need for enforcement discipline
+- explain ROI in terms of total outcome: maintenance, queueing, staffing burden, customer experience, and revenue capture
+
+PAGE 5
+Slug: /resources/when-should-a-hospital-outsource-parking-management
+Title tag: When Should a Hospital Outsource Parking Management? | Texas Parking Revenue
+Meta description: A practical guide for hospitals and healthcare systems weighing whether outsourced parking management can improve access, patient experience, and operations.
+H1: When Should a Hospital Outsource Parking Management?
+
+Structure:
+- short answer
+- why hospital parking is different
+- signs the current model is breaking down
+- what outsourcing can help with
+- where outsourcing is not automatically the answer
+- practical decision framework
+- bottom line
+- sources
+
+Must include:
+- hospital parking is not just about revenue; it is also about access, congestion, arrival experience, and patient flow
+- outsourcing becomes more compelling when campuses face recurring congestion, complaints, poor wayfinding, inconsistent staffing, or outdated systems
+- explain that the trigger is often operational complexity, not just revenue ambition
+- keep tone healthcare-aware and practical

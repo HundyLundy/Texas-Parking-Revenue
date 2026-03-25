@@ -1,0 +1,83 @@
+Please create 3 full resource pages using the following specs.
+
+GLOBAL RULES
+- These must read like serious industry resource articles, not sales pages.
+- Each page should be roughly 900–1,500 words.
+- Put a short-answer summary at the top.
+- Add “Last updated” near the title.
+- Add a sources section at the bottom.
+- Add one subtle footer note only:
+  “Supported by Perfect Parking. This page is for general information and is not legal, tax, or investment advice.”
+- No top-of-page CTA button.
+- No repeated sales CTAs inside the article.
+- Only a subtle text line at the bottom mentioning Perfect Parking.
+- Add internal links to /resources, /about, and /parking-revenue-analysis where appropriate.
+- Use a calm, credible, operator-friendly tone.
+
+PAGE 1
+Slug: /resources/should-texas-hotels-charge-for-parking
+Title tag: Should a Texas Hotel Charge for Parking? | Texas Parking Revenue
+Meta description: A practical guide for Texas hotel owners evaluating whether paid parking improves NOI, guest experience, and overall asset performance.
+H1: Should a Texas Hotel Charge for Parking?
+
+Structure:
+- short answer
+- why hotel parking is getting more attention
+- when charging for parking makes sense
+- when charging is a mistake
+- what owners underestimate
+- a simple decision framework
+- bottom line
+- sources
+
+Must include:
+- CBRE finding that the share of hotels in its sample reporting parking revenue rose from 17.0% in 2019 to 22.3% in 2023
+- explanation that the real question is incremental NOI, not just gross parking revenue
+- balanced explanation that charging can hurt if free parking is core to the value proposition
+- execution matters: signage, communication, payment flow, enforcement
+
+PAGE 2
+Slug: /resources/self-managed-vs-outsourced-parking-noi
+Title tag: Self-Managed vs Outsourced Parking: Which Produces More NOI? | Texas Parking Revenue
+Meta description: Compare self-managed and outsourced parking operations through the lens of NOI, leakage, staffing burden, reporting, and customer experience.
+H1: Self-Managed vs. Outsourced Parking: Which Produces More NOI?
+
+Structure:
+- short answer
+- why owners often compare the wrong things
+- when self-management can work
+- where self-management breaks down
+- when outsourcing makes more sense
+- what to compare beyond fees
+- simple decision framework
+- bottom line
+- sources
+
+Must include:
+- comparison should focus on net result, not just management fees
+- self-management can work for simple, stable, low-complexity assets
+- outsourcing is often more compelling when parking is a meaningful revenue line or operations are under-optimized
+- mention revenue leakage carefully as a category of problem, not a guaranteed numeric promise
+
+PAGE 3
+Slug: /resources/parking-management-rfp-guide
+Title tag: What Should a Parking Management RFP Include? | Texas Parking Revenue
+Meta description: A practical guide to writing a parking management RFP that compares operators on revenue, reporting, technology, enforcement, and implementation.
+H1: What Should a Parking Management RFP Include?
+
+Structure:
+- short answer
+- what a good parking RFP is supposed to do
+- core sections every RFP should include
+- questions that separate strong operators from weak ones
+- common mistakes
+- practical checklist
+- bottom line
+- sources
+
+Must include:
+- an RFP should compare vendors on substance, not just price
+- core sections such as property profile, current setup, goals, technology, reporting, enforcement, customer service, implementation, pricing structure, and references
+- common mistakes like lowest-bid thinking, vague goals, weak reporting requirements, and poor transition planning
+
+Please implement these pages in the current site design, keeping the site resource-first and low-pressure.
