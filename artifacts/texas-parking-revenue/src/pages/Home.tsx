@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { MetaTags } from "@/components/seo/MetaTags";
 import { Link } from "wouter";
-import { ArrowRight, BarChart3, Shield, Map, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import { cities, assets, decisions } from "@/data/content";
 
@@ -67,49 +67,108 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What this resource covers */}
-      <section className="py-20 bg-background border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4 speakable">
-            What this covers
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-            Parking is one of the most overlooked operating revenue lines in Texas real estate. This site covers the questions owners actually have to answer: whether to self-manage or outsource, which systems hold up in real enforcement conditions, and how parking NOI affects asset value.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
-                <BarChart3 className="w-5 h-5" />
+      {/* Resource Library Index */}
+      <section className="py-16 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+            <div>
+              <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">The resource library</p>
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+                Guides for Texas parking owners
+              </h2>
+              <p className="text-muted-foreground text-sm mt-2 max-w-xl leading-relaxed">
+                Decision analysis, in-depth operational guides, and market research — organized by topic. These are the questions that come up most often when owners start treating parking as a revenue line.
+              </p>
+            </div>
+            <Link
+              href="/resources"
+              className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors"
+            >
+              Full resource hub <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-10">
+
+            {/* Decision Analysis */}
+            <div>
+              <div className="flex items-center gap-2 mb-5 pb-3 border-b border-border">
+                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Decision Analysis</span>
               </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-1">NOI & Valuation</h3>
-                <p className="text-sm text-muted-foreground">
-                  How parking revenue affects cap rate, valuation, and asset performance.
-                </p>
+              <div className="space-y-5">
+                {Object.entries(decisions).map(([key, item]) => (
+                  <Link
+                    key={key}
+                    href={`/resources/${key}`}
+                    className="group flex items-start gap-4"
+                  >
+                    <ArrowRight className="w-4 h-4 mt-0.5 flex-shrink-0 text-border group-hover:text-accent group-hover:translate-x-0.5 transition-all" />
+                    <div>
+                      <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors leading-snug">
+                        {item.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed line-clamp-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
-                <Shield className="w-5 h-5" />
+
+            {/* In-Depth Guides */}
+            <div>
+              <div className="flex items-center gap-2 mb-5 pb-3 border-b border-border">
+                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">In-Depth Guides</span>
               </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-1">Operations & Enforcement</h3>
-                <p className="text-sm text-muted-foreground">
-                  Gated vs. gateless operations, LPR, enforcement design, and revenue leakage.
-                </p>
+              <div className="space-y-5">
+                {[
+                  {
+                    href: "/resources/should-texas-hotels-charge-for-parking",
+                    title: "Should a Texas Hotel Charge for Parking?",
+                    description: "When paid parking improves hotel NOI and when it creates more friction than it's worth.",
+                  },
+                  {
+                    href: "/resources/self-managed-vs-outsourced-parking-noi",
+                    title: "Self-Managed vs. Outsourced Parking: Which Produces More NOI?",
+                    description: "A net-NOI comparison — staffing, enforcement, reporting, and what the fee comparison misses.",
+                  },
+                  {
+                    href: "/resources/parking-management-rfp-guide",
+                    title: "What Should a Parking Management RFP Include?",
+                    description: "How to structure a vendor evaluation that compares operators on substance, not just price.",
+                  },
+                  {
+                    href: "/resources/gated-vs-gateless-parking-roi",
+                    title: "Gated vs. Gateless Parking: Where Does the ROI Actually Come From?",
+                    description: "Revenue capture, friction, maintenance, and enforcement tradeoffs — by asset type.",
+                  },
+                  {
+                    href: "/resources/when-should-a-hospital-outsource-parking-management",
+                    title: "When Should a Hospital Outsource Parking Management?",
+                    description: "A practical guide for healthcare systems weighing outsourced management against in-house operations.",
+                  },
+                ].map((article) => (
+                  <Link
+                    key={article.href}
+                    href={article.href}
+                    className="group flex items-start gap-4"
+                  >
+                    <ArrowRight className="w-4 h-4 mt-0.5 flex-shrink-0 text-border group-hover:text-accent group-hover:translate-x-0.5 transition-all" />
+                    <div>
+                      <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors leading-snug">
+                        {article.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed line-clamp-2">
+                        {article.description}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
-                <Map className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground mb-1">Texas Market Context</h3>
-                <p className="text-sm text-muted-foreground">
-                  City-specific demand drivers, risks, seasonality, and operator considerations across key Texas markets.
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -175,43 +234,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Decision Guides */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mb-10">
-            <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">Core operating questions</p>
-            <h2 className="text-2xl font-display font-bold text-foreground mb-2 speakable">
-              Key decisions for parking owners and operators
-            </h2>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              These are the decisions that most often determine whether parking performs like an amenity, an operational headache, or a revenue-producing asset.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {Object.entries(decisions).slice(0, 3).map(([key, item]) => (
-              <Link
-                key={key}
-                href={`/resources/${key}`}
-                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-accent/30 transition-all group"
-              >
-                <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">{item.description}</p>
-                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-accent transition-colors">
-                  Read analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-6 text-center">
-            <Link href="/resources" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              View all decision guides →
-            </Link>
           </div>
         </div>
       </section>
