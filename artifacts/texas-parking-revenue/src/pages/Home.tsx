@@ -23,7 +23,7 @@ export default function Home() {
     <Layout>
       <MetaTags
         title="Texas Parking Revenue — Guides for Hotel, Hospital & CRE Owners"
-        description="Independent research and market guides for Texas property owners navigating parking revenue, NOI strategy, operator selection, and LPR technology across Houston, Austin, and Corpus Christi."
+        description="Market guides and decision frameworks for Texas property owners navigating parking revenue, NOI strategy, operator selection, and LPR technology across Houston, Austin, and Corpus Christi."
         path="/"
         schema={homeSchema}
       />
@@ -49,13 +49,13 @@ export default function Home() {
             className="max-w-3xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/80 text-sm mb-7">
-              <BookOpen className="w-4 h-4" /> An independent resource for Texas property owners
+              <BookOpen className="w-4 h-4" /> A guide for Texas property owners
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 leading-tight tracking-tight speakable">
-              Parking revenue in Texas — what owners need to know
+              Parking revenue in Texas, explained for property owners
             </h1>
             <p className="text-lg md:text-xl text-white/75 mb-10 leading-relaxed max-w-2xl">
-              Market guides, operational frameworks, and decision analysis for hotel GMs, hospital administrators, and commercial real estate owners managing parking as a revenue line — not just an amenity.
+              Market guides, operating frameworks, and decision analysis for hotel, healthcare, and commercial real estate owners evaluating parking as a real revenue line.
             </p>
             <Link
               href="/resources"
@@ -74,39 +74,39 @@ export default function Home() {
             What this covers
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-            Parking is one of the most consistently under-managed revenue sources in Texas commercial real estate. This site covers the strategic and operational questions property owners actually face — from whether to self-manage or outsource, to which technology stack holds up in real enforcement scenarios, to how parking NOI flows through to asset valuation.
+            Parking is one of the most overlooked operating revenue lines in Texas real estate. This site covers the questions owners actually have to answer: whether to self-manage or outsource, which systems hold up in real enforcement conditions, and how parking NOI affects asset value.
           </p>
           <div className="grid sm:grid-cols-3 gap-6">
             <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-primary/8 text-primary flex items-center justify-center">
+              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
                 <BarChart3 className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1">NOI & Valuation</h3>
                 <p className="text-sm text-muted-foreground">
-                  How parking revenue flows to cap rate and property value, with Texas market benchmarks.
+                  How parking revenue affects cap rate, valuation, and asset performance.
                 </p>
               </div>
             </div>
             <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-primary/8 text-primary flex items-center justify-center">
+              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
                 <Shield className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1">Operations & Enforcement</h3>
                 <p className="text-sm text-muted-foreground">
-                  Gated vs. gateless, LPR systems, enforcement programs, and revenue leakage.
+                  Gated vs. gateless operations, LPR, enforcement design, and revenue leakage.
                 </p>
               </div>
             </div>
             <div className="flex gap-3">
-              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-primary/8 text-primary flex items-center justify-center">
+              <div className="mt-1 w-9 h-9 flex-shrink-0 rounded-lg bg-accent/15 text-accent flex items-center justify-center">
                 <Map className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1">Texas Market Context</h3>
                 <p className="text-sm text-muted-foreground">
-                  City-specific demand drivers, risks, and operator considerations for Houston, Austin, and Corpus Christi.
+                  City-specific demand drivers, risks, seasonality, and operator considerations across key Texas markets.
                 </p>
               </div>
             </div>
@@ -119,16 +119,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
+              <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">Texas market context</p>
               <h2 className="text-2xl font-display font-bold text-foreground mb-2">Texas Market Guides</h2>
               <p className="text-muted-foreground mb-7 text-sm leading-relaxed">
-                Parking strategy in Houston's Texas Medical Center operates nothing like the Domain in Austin or Corpus Christi's waterfront. Each guide covers local demand drivers, seasonal patterns, enforcement considerations, and owner Q&amp;A for that market.
+                Parking strategy in Houston behaves very differently than it does in Austin or Corpus Christi. Each market guide covers local demand drivers, enforcement realities, seasonality, and owner considerations for that city.
               </p>
               <div className="space-y-3">
                 {Object.entries(cities).map(([key, city]) => (
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-primary/40 rounded-2xl px-6 py-5 transition-all hover:shadow-sm"
+                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-md hover:-translate-y-0.5"
                   >
                     <div className="flex justify-between items-center">
                       <div>
@@ -139,7 +140,7 @@ export default function Home() {
                           {city.description}
                         </p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}
@@ -147,16 +148,17 @@ export default function Home() {
             </div>
 
             <div>
+              <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">For owners evaluating revenue</p>
               <h2 className="text-2xl font-display font-bold text-foreground mb-2">Asset Playbooks</h2>
               <p className="text-muted-foreground mb-7 text-sm leading-relaxed">
-                Hotels, hospitals, and commercial real estate each carry fundamentally different parking challenges. Guest validation conflicts, staff vs. visitor allocation, and after-hours monetization all require different solutions depending on asset type.
+                Hotels, hospitals, and commercial real estate each present different parking constraints. Guest experience, staff allocation, visitor access, and after-hours monetization all need different operating models.
               </p>
               <div className="space-y-3">
                 {Object.entries(assets).map(([key, asset]) => (
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-primary/40 rounded-2xl px-6 py-5 transition-all hover:shadow-sm"
+                    className="group block bg-card border border-border hover:border-accent/40 rounded-2xl px-6 py-5 transition-all hover:shadow-md hover:-translate-y-0.5"
                   >
                     <div className="flex justify-between items-center">
                       <div>
@@ -167,7 +169,7 @@ export default function Home() {
                           {asset.description}
                         </p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}
@@ -181,11 +183,12 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
+            <p className="text-xs font-bold tracking-widest uppercase text-accent mb-2">Core operating questions</p>
             <h2 className="text-2xl font-display font-bold text-foreground mb-2 speakable">
               Key decisions for parking owners and operators
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              These are the questions that consistently come up when owners are evaluating parking strategy — each one with a meaningful financial impact either way.
+              These are the decisions that most often determine whether parking performs like an amenity, an operational headache, or a revenue-producing asset.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -193,14 +196,14 @@ export default function Home() {
               <Link
                 key={key}
                 href={`/resources/${key}`}
-                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:shadow-md hover:-translate-y-0.5 transition-all group"
+                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:shadow-md hover:-translate-y-1 hover:border-accent/30 transition-all group"
               >
                 <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors leading-snug">
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{item.description}</p>
-                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-primary transition-colors">
-                  Read the analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-0.5 transition-transform" />
+                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-accent transition-colors">
+                  Read analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
@@ -217,10 +220,10 @@ export default function Home() {
       <section className="py-20 bg-secondary border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-            Want an analysis specific to your property?
+            Need a property-specific view?
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
-            If you've read through the guides and want to understand where your specific asset stands — what's leaking, what's realistic to recover, and what an operational change would involve — you can request a property-level parking revenue analysis.
+            If you want to understand what your specific property may be losing, what is realistically recoverable, and what an operating change would require, request a property-level parking revenue analysis.
           </p>
           <Link
             href="/parking-revenue-analysis"
@@ -228,9 +231,6 @@ export default function Home() {
           >
             Request a Revenue Analysis <ArrowRight className="w-4 h-4" />
           </Link>
-          <p className="mt-4 text-xs text-muted-foreground">
-            Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.
-          </p>
         </div>
       </section>
     </Layout>

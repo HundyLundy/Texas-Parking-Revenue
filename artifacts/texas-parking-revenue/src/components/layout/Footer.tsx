@@ -6,18 +6,6 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground border-t border-white/10">
-      {/* Subtle Perfect Parking attribution */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <p className="text-xs text-primary-foreground/45 text-center">
-            Powered by{" "}
-            <Link href="/parking-revenue-analysis" className="text-primary-foreground/60 hover:text-accent transition-colors underline underline-offset-2">
-              Perfect Parking
-            </Link>
-            . If you want help evaluating your property, contact them for a parking revenue analysis.
-          </p>
-        </div>
-      </div>
 
       {/* Main footer links */}
       <div className="pt-14 pb-8">
@@ -33,7 +21,7 @@ export function Footer() {
                 </span>
               </Link>
               <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-                Independent research and guides for Texas property owners who want to stop treating parking like an afterthought.
+                Parking guides and decision resources for Texas property owners evaluating revenue, operations, and technology.
               </p>
               <p className="text-xs text-primary-foreground/40">
                 Supported by{" "}

@@ -36,7 +36,7 @@ export default function Resources() {
             Resource Hub
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Guides, decision frameworks, and market analysis for hotel, hospital, and commercial real estate owners navigating parking revenue in Texas. Each piece covers a specific operational or strategic question with relevant data and clear analysis.
+            Guides, decision frameworks, and market analysis for hotel, healthcare, and commercial real estate owners evaluating parking revenue in Texas. Each piece addresses a specific financial, operational, or strategic question with practical analysis.
           </p>
         </div>
       </section>
@@ -45,25 +45,25 @@ export default function Resources() {
       <section className="py-16 bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-2">
-            <Scale className="w-5 h-5 text-primary" />
+            <Scale className="w-5 h-5 text-accent" />
             <h2 className="text-2xl font-display font-bold text-foreground">Decision Analysis</h2>
           </div>
           <p className="text-muted-foreground text-sm mb-10 ml-8">
-            These are the questions with real financial stakes — each guide covers the decision framework, relevant benchmarks, and what the answer typically looks like for Texas assets.
+            These are the questions with the biggest operating and financial consequences. Each guide covers the decision framework, typical tradeoffs, and what the answer usually depends on for Texas assets.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {Object.entries(decisions).map(([key, item]) => (
               <Link
                 key={key}
                 href={`/resources/${key}`}
-                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:border-primary/40 hover:shadow-md transition-all group"
+                className="flex flex-col bg-card rounded-2xl border border-border px-6 py-6 hover:border-accent/30 hover:shadow-md hover:-translate-y-0.5 transition-all group"
               >
                 <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors leading-snug">
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{item.description}</p>
-                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-primary transition-colors">
-                  Read analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-0.5 transition-transform" />
+                <div className="mt-5 flex items-center text-xs font-semibold text-muted-foreground group-hover:text-accent transition-colors">
+                  Read analysis <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
@@ -78,25 +78,25 @@ export default function Resources() {
 
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <MapPin className="w-5 h-5 text-primary" />
+                <MapPin className="w-5 h-5 text-accent" />
                 <h2 className="text-2xl font-display font-bold text-foreground">Texas Market Guides</h2>
               </div>
               <p className="text-sm text-muted-foreground mb-7 ml-8 leading-relaxed">
-                Market-specific analysis covering local demand drivers, enforcement dynamics, seasonal patterns, and owner Q&A for each active Texas market.
+                Market-specific analysis covering local demand drivers, enforcement realities, seasonal patterns, and owner considerations across active Texas markets.
               </p>
               <div className="space-y-3">
                 {Object.entries(cities).map(([key, city]) => (
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-primary/40 rounded-2xl px-6 py-5 transition-all hover:shadow-sm"
+                    className="group block bg-card border border-border hover:border-accent/30 rounded-2xl px-6 py-5 transition-all hover:shadow-sm hover:-translate-y-0.5"
                   >
                     <div className="flex justify-between items-center">
                       <div>
                         <h3 className="font-bold text-sm group-hover:text-primary transition-colors">{city.name} Market Guide</h3>
                         <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{city.description}</p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}
@@ -105,25 +105,25 @@ export default function Resources() {
 
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <Building2 className="w-5 h-5 text-primary" />
+                <Building2 className="w-5 h-5 text-accent" />
                 <h2 className="text-2xl font-display font-bold text-foreground">Asset Playbooks</h2>
               </div>
               <p className="text-sm text-muted-foreground mb-7 ml-8 leading-relaxed">
-                Deep-dive operational guides by property type — covering industry benchmarks, common problems, and operational frameworks specific to each asset category.
+                Operational guides by property type, covering common constraints, recurring revenue issues, and parking frameworks specific to each asset category.
               </p>
               <div className="space-y-3">
                 {Object.entries(assets).map(([key, asset]) => (
                   <Link
                     key={key}
                     href={`/texas/${key}-parking-revenue`}
-                    className="group block bg-card border border-border hover:border-primary/40 rounded-2xl px-6 py-5 transition-all hover:shadow-sm"
+                    className="group block bg-card border border-border hover:border-accent/30 rounded-2xl px-6 py-5 transition-all hover:shadow-sm hover:-translate-y-0.5"
                   >
                     <div className="flex justify-between items-center">
                       <div>
                         <h3 className="font-bold text-sm group-hover:text-primary transition-colors">{asset.name} Playbook</h3>
                         <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{asset.description}</p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all flex-shrink-0 ml-4" />
+                      <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
                     </div>
                   </Link>
                 ))}

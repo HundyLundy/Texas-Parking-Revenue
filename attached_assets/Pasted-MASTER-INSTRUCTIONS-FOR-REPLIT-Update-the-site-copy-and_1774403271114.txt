@@ -1,0 +1,611 @@
+MASTER INSTRUCTIONS FOR REPLIT
+
+Update the site copy and page labeling across the homepage / landing page, property directory, vendor directory, and resource hub.
+
+Global goals
+	1.	Remove the word “independent” everywhere on the site.
+Do not describe the site as independent research if it is supported by Perfect Parking.
+	2.	Keep the site positioned as an industry guide, not a sales page.
+The tone should feel editorial, practical, and operator-focused.
+	3.	Keep Perfect Parking attribution subtle and honest.
+Use “Supported by Perfect Parking” in the footer.
+Do not repeat “Powered by Perfect Parking…” in multiple places on the same page.
+	4.	Only one promotional CTA block per page.
+If a page has a main CTA section, do not repeat the Perfect Parking attribution line directly under it and then again in the footer.
+	5.	Make the copy slightly sharper and less bland, but do not make it flashy or salesy.
+Think: institutional, useful, smart, clear.
+	6.	Property directory entries should not look like fake real properties.
+Reframe them as editorial example profiles, not implied live listings.
+	7.	Vendor directory should feel like a real reference page.
+Perfect Parking can appear first, but label it “Supporter” or “Site Supporter” instead of “Featured.”
+
+⸻
+
+1) HOMEPAGE / LANDING PAGE CHANGES
+
+Replace the hero eyebrow / pill text
+
+Current
+
+“An independent resource for Texas property owners”
+
+Replace with
+
+“A guide for Texas property owners”
+
+⸻
+
+Replace the homepage hero headline
+
+Current
+
+“Parking revenue in Texas — what owners need to know”
+
+Replace with
+
+“Parking revenue in Texas, explained for property owners”
+
+This reads a little more useful and a little less generic.
+
+⸻
+
+Replace the homepage hero paragraph
+
+Current
+
+“Market guides, operational frameworks, and decision analysis for hotel GMs, hospital administrators, and commercial real estate owners managing parking as a revenue line — not just an amenity.”
+
+Replace with
+
+“Market guides, operating frameworks, and decision analysis for hotel, healthcare, and commercial real estate owners evaluating parking as a real revenue line.”
+
+This is tighter and less wordy.
+
+⸻
+
+Keep the hero button, but use this label
+
+Button text
+
+“Browse the Guides”
+
+That part is fine.
+
+⸻
+
+Replace the “What this covers” paragraph
+
+Current
+
+“Parking is one of the most consistently under-managed revenue sources in Texas commercial real estate. This site covers the strategic and operational questions property owners actually face — from whether to self-manage or outsource, to which technology stack holds up in real enforcement scenarios, to how parking NOI flows through to asset valuation.”
+
+Replace with
+
+“Parking is one of the most overlooked operating revenue lines in Texas real estate. This site covers the questions owners actually have to answer: whether to self-manage or outsource, which systems hold up in real enforcement conditions, and how parking NOI affects asset value.”
+
+⸻
+
+Replace the three supporting category blurbs with these exact versions
+
+NOI & Valuation
+
+“How parking revenue affects cap rate, valuation, and asset performance.”
+
+Operations & Enforcement
+
+“Gated vs. gateless operations, LPR, enforcement design, and revenue leakage.”
+
+Texas Market Context
+
+“City-specific demand drivers, risks, seasonality, and operator considerations across key Texas markets.”
+
+⸻
+
+Replace “Texas Market Guides” intro paragraph
+
+Current
+
+“Parking strategy in Houston’s Texas Medical Center operates nothing like the Domain in Austin or Corpus Christi’s waterfront. Each guide covers local demand drivers, seasonal patterns, enforcement considerations, and owner Q&A for that market.”
+
+Replace with
+
+“Parking strategy in Houston behaves very differently than it does in Austin or Corpus Christi. Each market guide covers local demand drivers, enforcement realities, seasonality, and owner considerations for that city.”
+
+⸻
+
+Replace the city card descriptions
+
+Houston
+
+“Demand, enforcement, and monetization strategies for Houston hotels, hospitals, and commercial assets.”
+
+Austin
+
+“Parking strategy for high-density, mixed-use, and experience-driven assets in Austin.”
+
+Corpus Christi
+
+“Parking revenue considerations for waterfront, hospitality, healthcare, and destination-driven properties.”
+
+⸻
+
+Replace the “Asset Playbooks” intro paragraph
+
+Current
+
+“Hotels, hospitals, and commercial real estate each carry fundamentally different parking challenges. Guest validation conflicts, staff vs. visitor allocation, and after-hours monetization all require different solutions depending on asset type.”
+
+Replace with
+
+“Hotels, hospitals, and commercial real estate each present different parking constraints. Guest experience, staff allocation, visitor access, and after-hours monetization all need different operating models.”
+
+⸻
+
+Replace the asset card descriptions
+
+Hotel & Hospitality
+
+“Balancing guest experience, validation policy, and parking NOI in Texas hospitality assets.”
+
+Hospital & Healthcare
+
+“Parking structure, access, and enforcement for medical campuses, patients, staff, and visitors.”
+
+Commercial Real Estate
+
+“Turning office, retail, and mixed-use parking from a passive obligation into an operating revenue line.”
+
+⸻
+
+Replace the “Key decisions for parking owners and operators” intro paragraph
+
+Current
+
+“These are the questions that consistently come up when owners are evaluating parking strategy — each one with a meaningful financial impact either way.”
+
+Replace with
+
+“These are the decisions that most often determine whether parking performs like an amenity, an operational headache, or a revenue-producing asset.”
+
+That gives it a little more bite.
+
+⸻
+
+Replace the decision card blurbs
+
+Self-Managed vs. Outsourced Parking
+
+“Which operating model tends to produce stronger NOI, and under what conditions each one makes sense.”
+
+Gated vs. Gateless Parking Systems
+
+“The ROI, enforcement requirements, and operating tradeoffs between barrier-based and LPR-led systems.”
+
+How Parking Revenue Impacts Property Value
+
+“How parking NOI flows through cap rate and why parking is often an underused lever in asset performance.”
+
+⸻
+
+Replace the main CTA section headline
+
+Current
+
+“Want an analysis specific to your property?”
+
+Replace with
+
+“Need a property-specific view?”
+
+⸻
+
+Replace the CTA paragraph
+
+Current
+
+“If you’ve read through the guides and want to understand where your specific asset stands — what’s leaking, what’s realistic to recover, and what an operational change would involve — you can request a property-level parking revenue analysis.”
+
+Replace with
+
+“If you want to understand what your specific property may be losing, what is realistically recoverable, and what an operating change would require, request a property-level parking revenue analysis.”
+
+⸻
+
+Keep CTA button text as
+
+“Request a Revenue Analysis”
+
+⸻
+
+Important CTA cleanup
+
+Delete this line from directly under the CTA button:
+
+“Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.”
+
+Do not show that line here.
+It is already handled in the footer.
+
+⸻
+
+2) PROPERTY DIRECTORY PAGE CHANGES
+
+Page strategy change
+
+This page should no longer present entries like they are real live properties.
+It should present them as example property profiles or illustrative operating profiles.
+
+Replace page title
+
+Current
+
+“Property Directory”
+
+Replace with
+
+“Example Property Profiles”
+
+⸻
+
+Add a short intro paragraph under the title
+
+Use this exact copy:
+
+“These illustrative profiles show common Texas parking operating scenarios by asset type, location pattern, and management model. They are examples for planning and comparison, not live property listings.”
+
+⸻
+
+Remove every “Featured” badge from property cards
+
+Delete all of them.
+
+They do not make sense on example profiles.
+
+⸻
+
+Rename the example cards to clearly editorial titles
+
+Replace:
+
+“Downtown Houston Hotel District”
+with
+“Downtown Hotel Parking Profile”
+
+Replace:
+
+“Texas Medical Center Campus”
+with
+“Medical Campus Parking Profile”
+
+Replace:
+
+“Uptown Dallas Office Campus”
+with
+“Urban Office Campus Parking Profile”
+
+Replace:
+
+“Dallas Medical District Hospital”
+with
+“Hospital Parking Profile”
+
+Replace:
+
+“South Congress Austin Mixed-Use”
+with
+“Mixed-Use District Parking Profile”
+
+Replace:
+
+“Austin Domain Retail Center”
+with
+“Retail Center Parking Profile”
+
+Replace:
+
+“Houston Airport Area Hotel Portfolio”
+with
+“Airport Hotel Parking Profile”
+
+⸻
+
+Add one additional field to each card if possible
+
+If layout allows, add:
+
+Use Case
+Examples:
+	•	Guest parking + transient capture
+	•	Staff / visitor separation
+	•	Mixed-use daytime + evening monetization
+	•	Validation-heavy operations
+	•	Event-driven pricing
+	•	Healthcare access + enforcement balance
+
+If you do not want to add another field, at least add a 1-sentence descriptor below the title for each card.
+
+⸻
+
+Remove the Perfect Parking attribution line from the body of this page
+
+Delete:
+“Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.”
+
+Keep support language only in the global footer.
+
+⸻
+
+3) VENDOR DIRECTORY PAGE CHANGES
+
+Replace page title
+
+“Vendor Directory” can stay.
+
+⸻
+
+Add intro paragraph under title
+
+Use this exact copy:
+
+“A reference list of parking operators, technology providers, and related platforms relevant to Texas property owners evaluating parking revenue strategy, access control, enforcement, and operations.”
+
+⸻
+
+Replace Perfect Parking badge
+
+Current
+
+“Featured”
+
+Replace with
+
+“Supporter”
+
+or, if the badge style allows a slightly longer label:
+
+“Site Supporter”
+
+That is much more credible.
+
+⸻
+
+Add a small disclosure line near the top or above the footer
+
+Use this exact copy:
+
+“Directory supported by Perfect Parking. Listings are included for educational reference.”
+
+Keep it subtle. Small type is fine.
+
+⸻
+
+Tighten vendor descriptions slightly
+
+Perfect Parking
+
+“Texas-focused parking operator and revenue optimization partner for hotels, hospitals, and commercial properties, with emphasis on outsourced operations, enforcement strategy, and asset-level analysis.”
+
+SKIDATA
+
+“Enterprise parking access and revenue control systems including gated entry, PARCS equipment, and management software.”
+
+ParkWhiz / Arrive
+
+“Digital parking distribution and marketplace tools designed to help operators capture transient parking demand.”
+
+T2 Systems
+
+“Parking software for permit management, enforcement, payments, and analytics across institutional and municipal environments.”
+
+IPS Group
+
+“Smart parking meters, pay stations, and enforcement technology for curb, surface lot, and networked parking operations.”
+
+Parkeon / Flowbird
+
+“Payment, access, and mobility technology including pay stations, mobile payment integration, and guidance systems.”
+
+Parking Network Texas
+
+“Industry network and informational resource connecting parking owners, operators, and vendors across Texas.”
+
+⸻
+
+Remove the inline Perfect Parking body CTA if it appears on this page
+
+Delete:
+“Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.”
+
+Footer support mention only.
+
+⸻
+
+4) RESOURCE HUB PAGE CHANGES
+
+Replace the entire visible copy on the Resource Hub page with the revised version below.
+
+⸻
+
+RESOURCE HUB — REVISED COPY
+
+Page title
+
+Resource Hub
+
+Intro paragraph
+
+Guides, decision frameworks, and market analysis for hotel, healthcare, and commercial real estate owners evaluating parking revenue in Texas. Each piece addresses a specific financial, operational, or strategic question with practical analysis.
+
+⸻
+
+Section title
+
+Decision Analysis
+
+Section intro
+
+These are the questions with the biggest operating and financial consequences. Each guide covers the decision framework, typical tradeoffs, and what the answer usually depends on for Texas assets.
+
+⸻
+
+Card 1
+
+Self-Managed vs. Outsourced Parking
+Which operating model tends to produce stronger net operating income, and under what conditions does each one make sense?
+Link text: Read analysis
+
+Card 2
+
+Gated vs. Gateless Parking Systems
+The ROI of LPR-led gateless operations, including capital costs, enforcement requirements, and where each system performs best.
+Link text: Read analysis
+
+Card 3
+
+How Parking Revenue Impacts Property Value
+How parking NOI flows through cap rate, valuation, and overall asset performance.
+Link text: Read analysis
+
+Card 4
+
+Enforcement Revenue vs. Customer Friction
+How to recover revenue through enforcement without damaging the guest, tenant, patient, or visitor relationships the asset depends on.
+Link text: Read analysis
+
+Card 5
+
+When Paid Parking Makes Sense
+The financial and operational framework for converting a free lot into a paid parking asset without creating avoidable backlash.
+Link text: Read analysis
+
+⸻
+
+Section title
+
+Texas Market Guides
+
+Section intro
+
+Market-specific analysis covering local demand drivers, enforcement realities, seasonal patterns, and owner considerations across active Texas markets.
+
+Houston Market Guide
+
+Demand, enforcement, and monetization strategies for Houston hotels, hospitals, and commercial assets.
+
+Austin Market Guide
+
+Parking strategy for high-density, mixed-use, and experience-driven assets in Austin.
+
+Corpus Christi Market Guide
+
+Parking revenue considerations for waterfront, hospitality, healthcare, and destination-driven properties.
+
+⸻
+
+Section title
+
+Asset Playbooks
+
+Section intro
+
+Operational guides by property type, covering common constraints, recurring revenue issues, and parking frameworks specific to each asset category.
+
+Hotel & Hospitality Playbook
+
+Balancing guest experience, validation policy, and parking NOI for Texas hospitality assets.
+
+Hospital & Healthcare Playbook
+
+Structuring parking for medical campuses, including patient access, staff allocation, visitor flow, and enforcement.
+
+Commercial Real Estate Playbook
+
+Turning office, retail, and mixed-use parking from a passive obligation into an operating revenue line.
+
+⸻
+
+Delete this line from the Resource Hub body
+
+“Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.”
+
+Do not include it in the body.
+
+⸻
+
+5) FOOTER CHANGES ACROSS THE SITE
+
+Replace the footer description
+
+Current
+
+“Independent research and guides for Texas property owners who want to stop treating parking like an afterthought.”
+
+Replace with
+
+“Parking guides and decision resources for Texas property owners evaluating revenue, operations, and technology.”
+
+⸻
+
+Keep this line in the footer
+
+“Supported by Perfect Parking”
+
+That is enough.
+
+⸻
+
+Remove duplicate attribution line above the footer if present
+
+Delete:
+“Powered by Perfect Parking. If you want help evaluating your property, contact them for a parking revenue analysis.”
+
+If the site already says “Supported by Perfect Parking” in the footer, do not repeat the longer line elsewhere on the same page unless it is part of a dedicated sponsor disclosure page.
+
+⸻
+
+6) SMALL DESIGN / ENERGY UPGRADES SO IT FEELS LESS BORING
+
+Do not redesign the whole site. Just add a little more punch.
+
+Make these subtle styling changes
+	1.	Give section headers slightly more contrast and weight
+Keep them editorial, but let them feel a little more premium.
+	2.	Use a small gold accent sparingly
+Use it for:
+	•	tiny divider lines
+	•	“Supporter” badge
+	•	hover accents
+	•	maybe one small icon treatment
+Do not overdo it.
+	3.	Add a short subheading or kicker above some major sections
+Examples:
+	•	“For owners evaluating revenue”
+	•	“Texas market context”
+	•	“Core operating questions”
+	4.	Improve hover states on cards
+On mobile and desktop, cards should feel slightly more alive:
+	•	very light lift
+	•	faint shadow increase
+	•	arrow movement by a few pixels
+	5.	Consider one stronger image or textured background only in the hero
+Keep the rest clean.
+The page does not need more visual noise below the fold.
+	6.	Use better microcopy, not louder design, to create energy
+The site should feel sharp, not flashy.
+
+⸻
+
+7) FINAL TONE RULE
+
+All copy should sound like:
+	•	a smart operator wrote it
+	•	not a marketing intern
+	•	not a generic SEO blog
+	•	not a hard sales funnel
+
+Tone target:
+clear, practical, institutional, slightly sharp
+
+⸻
+
+If you want, next I can give you a second paste block just for the homepage only, line by line, in the shortest possible format for Replit.

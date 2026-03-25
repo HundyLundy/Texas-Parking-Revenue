@@ -5,7 +5,7 @@ export const cities = {
     name: "Houston",
     slug: "houston",
     title: "Houston Parking Revenue & Management",
-    description: "Navigate Houston's complex parking ecosystem. Learn how to monetize your lots and garages in Space City.",
+    description: "Demand, enforcement, and monetization strategies for Houston hotels, hospitals, and commercial assets.",
     drivers: ["Texas Medical Center", "Downtown Corporate Offices", "Galleria Hospitality", "Sports & Entertainment"],
     overview: "Houston doesn't have zoning laws, which means parking demand shows up in places most operators aren't expecting. The TMC alone generates a level of daily vehicle traffic that rivals some airport corridors. But what kills most Houston owners isn't lack of demand — it's the assumption that any parking program will work. It won't. The Galleria needs a completely different approach than Downtown, and both are nothing like Midtown. One-size-fits-all dies fast here.",
     metroSummary: "4th largest U.S. city with 2.3M residents and no zoning laws — meaning dense mixed-use parking demand exists in unexpected pockets across the city.",
@@ -37,7 +37,7 @@ export const cities = {
     name: "Austin",
     slug: "austin",
     title: "Austin Parking Revenue Optimization",
-    description: "Capitalize on Austin's density and tech-driven economy. Parking strategies for ATX properties.",
+    description: "Parking strategy for high-density, mixed-use, and experience-driven assets in Austin.",
     drivers: ["Tech Hubs / The Domain", "Downtown Density", "UT Austin Proximity", "Major Festivals (SXSW, ACL)"],
     overview: "Austin is running out of space, and parking is feeling it first. What used to be an easy free lot on Rainey Street is now a revenue-generating asset — if you're running it right. The challenge here isn't demand. It's that Austin property owners have historically given parking away for free, and now walking that back requires some finesse. The good news: the city's tech-forward population adopts new parking systems faster than anywhere else in Texas.",
     metroSummary: "Austin is the fastest-growing major metro in the U.S. with an influx of tech headquarters creating unprecedented demand pressure on a historically low-supply parking market.",
@@ -69,7 +69,7 @@ export const cities = {
     name: "Corpus Christi",
     slug: "corpus-christi",
     title: "Corpus Christi Parking Revenue Guide",
-    description: "Parking revenue strategies for Corpus Christi hotels, healthcare campuses, and waterfront commercial properties.",
+    description: "Parking revenue considerations for waterfront, hospitality, healthcare, and destination-driven properties.",
     drivers: ["Port of Corpus Christi", "North Beach & Waterfront Tourism", "Christus Spohn Health System", "Naval Air Station Corpus Christi"],
     overview: "Corpus Christi gets written off by national operators who see a mid-size coastal market and move on. That's a mistake — and honestly, it works in your favor if you're a property owner here. The tourism economy, the Port, the naval base, and the Christus Spohn health system each pull a completely different parking user. Seasonal swings are real. Enforcement optics matter more here than in Houston or Dallas. But the upside for owners who get the strategy right is significant.",
     metroSummary: "Texas's 8th largest city with ~320K residents and a growing tourism economy anchored by the Corpus Christi Bay, the Port, and a strong Navy presence — all of which create distinct parking demand segments.",
@@ -103,7 +103,7 @@ export const assets = {
   hotel: {
     name: "Hotel & Hospitality",
     title: "Hotel Parking Revenue Management",
-    description: "Balance guest experience with maximum parking NOI for your Texas hospitality assets.",
+    description: "Balancing guest experience, validation policy, and parking NOI in Texas hospitality assets.",
     context: "Hotel parking sits at the intersection of two competing objectives: guest experience and revenue capture. Most hotel operators have historically optimized entirely for the first while ignoring the second. The result is validation programs that give away parking too freely, transient revenue that goes entirely uncaptured, and gate systems that create friction without generating commensurate income. Modern hotel parking strategy integrates directly with the property management system (PMS), allowing simultaneous optimization for guest convenience and revenue per space.",
     keyMetrics: [
       { stat: "15–25%", label: "Higher revenue capture with PMS-integrated parking vs. standalone systems" },
@@ -137,7 +137,7 @@ export const assets = {
   hospital: {
     name: "Hospital & Healthcare",
     title: "Healthcare Parking Operations",
-    description: "Structuring parking for medical campuses — patient experience, staff allocation, and NOI without the friction.",
+    description: "Parking structure, access, and enforcement for medical campuses, patients, staff, and visitors.",
     context: "Healthcare parking is more heavily scrutinized than almost any other commercial asset type. Patient experience scores (HCAHPS) directly tie to reimbursement rates, and parking is consistently among the top complaints in patient satisfaction surveys. At the same time, hospital parking operations carry real revenue potential: large campuses manage 2,000–8,000 spaces, generate significant monthly permit revenue from staff, and handle daily transient volumes that rival mid-size airports. The challenge is building a program that captures this revenue without creating the perception of exploiting patients during their most vulnerable moments.",
     keyMetrics: [
       { stat: "60–70%", label: "Share of hospital parking demand that comes from staff, not patients or visitors" },
@@ -171,7 +171,7 @@ export const assets = {
   "commercial-real-estate": {
     name: "Commercial Real Estate",
     title: "CRE Parking Revenue & Monetization",
-    description: "Office parks, mixed-use, and retail centers — turning parking from a lease obligation into a revenue line.",
+    description: "Turning office, retail, and mixed-use parking from a passive obligation into an operating revenue line.",
     context: "Commercial real estate parking is the most structurally underutilized parking category in Texas. The primary reason is straightforward: parking is included in most commercial leases, so it's treated as an amenity rather than an asset. The result is that parking structures sit at 60–80% capacity during off-peak hours with no revenue being captured, while the same landlord pays for maintenance, lighting, insurance, and security on every space. The shift from 'free with lease' to 'programmatically managed' is operationally achievable but requires tenant communication and a clear financial model.",
     keyMetrics: [
       { stat: "60–80%", label: "Typical office park parking vacancy after 6pm and on weekends" },
@@ -207,7 +207,7 @@ export const assets = {
 export const decisions = {
   "self-managed-vs-outsourced-parking": {
     title: "Self-Managed vs. Outsourced Parking",
-    description: "Which management model produces better net operating income — and under what conditions does each one make sense?",
+    description: "Which operating model tends to produce stronger NOI, and under what conditions each one makes sense.",
     pros: ["Full control over pricing, enforcement policy, and vendor selection", "No management fee or revenue split (typically 15–25% to operator)", "Direct relationship with parkers and tenants"],
     cons: ["Technology investment and ongoing maintenance falls entirely on ownership", "Enforcement staffing and liability sit with the asset owner", "Scaling across multiple locations requires duplicating management overhead"],
     analysis: [
@@ -225,7 +225,7 @@ export const decisions = {
   },
   "gated-vs-gateless-parking": {
     title: "Gated vs. Gateless Parking Systems",
-    description: "The ROI of switching to LPR-based gateless operations — capital costs, enforcement requirements, and where each system performs best.",
+    description: "The ROI, enforcement requirements, and operating tradeoffs between barrier-based and LPR-led systems.",
     pros: ["No gate hardware to break, maintain, or replace every 7–10 years", "Faster throughput — no queuing at arms, especially during peak event periods", "App-based and license plate payment options improve user experience significantly"],
     cons: ["Requires active enforcement infrastructure — gateless without enforcement has 15–25% non-payment rates", "Slight reduction in perceived security, particularly for residential-adjacent assets", "LPR accuracy issues in poor lighting or adverse weather can create false citation disputes"],
     analysis: [
@@ -243,7 +243,7 @@ export const decisions = {
   },
   "how-parking-revenue-impacts-property-value": {
     title: "How Parking Revenue Impacts Property Value",
-    description: "The cap rate math behind parking NOI — and why optimizing parking is often the highest-ROI asset improvement available.",
+    description: "How parking NOI flows through cap rate and why parking is often an underused lever in asset performance.",
     pros: ["Every dollar of parking NOI directly increases property valuation at the asset's cap rate", "Parking revenue diversifies income streams beyond primary tenant exposure", "Documented parking revenue history improves lender confidence and financing terms"],
     cons: ["Parking revenue requires active operational management — it doesn't run itself", "Revenue can fluctuate with market conditions, events, and occupancy changes", "Poorly managed enforcement or rate increases can create friction that flows back into core asset performance"],
     analysis: [
@@ -261,7 +261,7 @@ export const decisions = {
   },
   "parking-enforcement-revenue-vs-friction": {
     title: "Enforcement Revenue vs. Customer Friction",
-    description: "How to build an enforcement program that recaptures real revenue without damaging the relationships your core asset depends on.",
+    description: "How to recover revenue through enforcement without damaging the guest, tenant, patient, or visitor relationships the asset depends on.",
     pros: ["Active enforcement recaptures 15–30% of revenue that's currently leaking through non-payment and validation abuse", "Consistent enforcement trains user behavior — compliance rates improve significantly after 60–90 days", "Digital LPR citation programs create a revenue stream that offsets enforcement operational costs"],
     cons: ["Aggressive enforcement in hospitality or healthcare settings generates public-facing complaints and review damage", "Citation disputes require staffed resolution processes — under-resourced programs create bottlenecks and legal exposure", "Tenants and guests who feel over-enforced make it a lease renewal or return visit issue"],
     analysis: [
@@ -279,7 +279,7 @@ export const decisions = {
   },
   "when-paid-parking-makes-sense": {
     title: "When Paid Parking Makes Sense",
-    description: "The operational and financial framework for transitioning a free lot to a paid asset — and how to do it without the backlash.",
+    description: "The financial and operational framework for converting a free lot into a paid parking asset without creating avoidable backlash.",
     pros: ["Immediate cash flow from an asset currently generating zero parking revenue", "Occupancy data and turnover control — free parking creates no mechanism to manage capacity", "Funds ongoing lot maintenance and security costs that currently absorb operating budget"],
     cons: ["Transition requires careful user communication to avoid a public backlash period", "Technology investment (LPR cameras, payment software, signage) carries upfront cost", "Nearby competitors with free parking create market pressure — especially for retail tenants"],
     analysis: [
