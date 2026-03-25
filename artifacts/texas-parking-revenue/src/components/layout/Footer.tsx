@@ -1,65 +1,135 @@
 import { Link } from "wouter";
 import { siteConfig } from "@/config/site";
+import { PhoneCall } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground border-t border-white/10 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-accent-foreground font-display font-bold text-xl">
-                TX
-              </div>
-              <span className="font-display font-bold text-xl tracking-tight">
-                ParkingRevenue
-              </span>
+    <footer className="bg-primary text-primary-foreground border-t border-white/10">
+      {/* Perfect Parking ad strip */}
+      <div className="border-b border-white/10 bg-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <p className="text-xs font-bold tracking-widest uppercase text-accent mb-1">Presented by</p>
+              <p className="text-2xl font-display font-bold text-white">Perfect Parking</p>
+              <p className="text-sm text-primary-foreground/60 mt-1 max-w-sm">
+                Texas's go-to parking operator for hotels, healthcare campuses, and commercial real estate. They wrote a lot of what you read on this site.
+              </p>
+            </div>
+            <Link
+              href="/parking-revenue-analysis"
+              className="flex-shrink-0 flex items-center gap-2 px-7 py-3.5 rounded-xl bg-accent text-accent-foreground font-bold text-sm hover:bg-accent/90 transition-all hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5"
+            >
+              <PhoneCall className="w-4 h-4" /> Talk to Their Team
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              The premier resource hub for Texas property owners to maximize parking NOI, improve operational efficiency, and elevate asset value.
-            </p>
-            <div className="text-xs text-primary-foreground/50">
-              Supported by <a href={siteConfig.perfectParkingUrl} className="text-accent hover:underline">{siteConfig.perfectParkingName}</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main footer links */}
+      <div className="pt-14 pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-1">
+              <Link href="/" className="flex items-center gap-2 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-accent-foreground font-display font-bold text-xl">
+                  TX
+                </div>
+                <span className="font-display font-bold text-xl tracking-tight">
+                  ParkingRevenue
+                </span>
+              </Link>
+              <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+                Independent research and guides for Texas property owners who want to stop treating parking like an afterthought.
+              </p>
+              <p className="text-xs text-primary-foreground/40">
+                Supported by{" "}
+                <a href={siteConfig.perfectParkingUrl} className="text-accent hover:underline">
+                  {siteConfig.perfectParkingName}
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Texas Cities</h3>
+              <ul className="space-y-3 text-sm text-primary-foreground/70">
+                <li>
+                  <Link href="/texas/houston-parking-revenue" className="hover:text-accent transition-colors">
+                    Houston
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/texas/austin-parking-revenue" className="hover:text-accent transition-colors">
+                    Austin
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/texas/corpus-christi-parking-revenue" className="hover:text-accent transition-colors">
+                    Corpus Christi
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Asset Types</h3>
+              <ul className="space-y-3 text-sm text-primary-foreground/70">
+                <li>
+                  <Link href="/texas/hotel-parking-revenue" className="hover:text-accent transition-colors">
+                    Hotels & Hospitality
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/texas/hospital-parking-management" className="hover:text-accent transition-colors">
+                    Hospitals & Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/texas/commercial-real-estate-parking-revenue" className="hover:text-accent transition-colors">
+                    Commercial Real Estate
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-primary-foreground/50">Resources</h3>
+              <ul className="space-y-3 text-sm text-primary-foreground/70">
+                <li>
+                  <Link href="/resources/self-managed-vs-outsourced-parking" className="hover:text-accent transition-colors">
+                    Self-Managed vs. Outsourced
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/resources/gated-vs-gateless-parking" className="hover:text-accent transition-colors">
+                    Gated vs. Gateless
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/directory" className="hover:text-accent transition-colors">
+                    Provider Directory
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-accent transition-colors">
+                    About
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Texas Cities</h3>
-            <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li><Link href="/texas/houston-parking-revenue" className="hover:text-accent transition-colors">Houston</Link></li>
-              <li><Link href="/texas/dallas-parking-revenue" className="hover:text-accent transition-colors">Dallas</Link></li>
-              <li><Link href="/texas/austin-parking-revenue" className="hover:text-accent transition-colors">Austin</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Asset Types</h3>
-            <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li><Link href="/texas/hotel-parking-revenue" className="hover:text-accent transition-colors">Hotels & Hospitality</Link></li>
-              <li><Link href="/texas/hospital-parking-management" className="hover:text-accent transition-colors">Hospitals & Healthcare</Link></li>
-              <li><Link href="/texas/commercial-real-estate-parking-revenue" className="hover:text-accent transition-colors">Commercial Real Estate</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Resources</h3>
-            <ul className="space-y-3 text-sm text-primary-foreground/70">
-              <li><Link href="/resources/self-managed-vs-outsourced-parking" className="hover:text-accent transition-colors">Self-Managed vs Outsourced</Link></li>
-              <li><Link href="/resources/gated-vs-gateless-parking" className="hover:text-accent transition-colors">Gated vs Gateless</Link></li>
-              <li><Link href="/directory" className="hover:text-accent transition-colors">Provider Directory</Link></li>
-              <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
-          <p>© {currentYear} {siteConfig.siteName}. All rights reserved.</p>
-          <div className="flex gap-6">
-            <span className="hover:text-white cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-white cursor-pointer">Terms of Service</span>
-            <span>Last Updated: March 2026</span>
+          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/40">
+            <p>
+              &copy; {currentYear} {siteConfig.siteName}. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <span className="hover:text-white cursor-pointer">Privacy Policy</span>
+              <span className="hover:text-white cursor-pointer">Terms of Service</span>
+              <span>Updated March 2026</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
+import { SiteSchema } from "@/components/seo/SiteSchema";
 import { motion } from "framer-motion";
 
 interface LayoutProps {
@@ -10,12 +11,12 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Decorative background image - kept subtle */}
-      <div 
+      <SiteSchema />
+      <div
         className="fixed inset-0 z-[-1] opacity-[0.03] pointer-events-none mix-blend-multiply"
-        style={{ 
+        style={{
           backgroundImage: `url('${import.meta.env.BASE_URL}images/pattern-bg.png')`,
-          backgroundSize: '400px'
+          backgroundSize: "400px",
         }}
       />
       <NavBar />

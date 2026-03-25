@@ -29,12 +29,47 @@ interface CityPageProps {
 export function CityPageTemplate({ id, data }: CityPageProps) {
   const canonicalPath = `/texas/${id}-parking-revenue`;
 
+  const schemas: object[] = [];
+
+  if (data.ownerQuestions && data.ownerQuestions.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: data.ownerQuestions.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    });
+  }
+
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: data.title,
+    description: data.description,
+    about: {
+      "@type": "Thing",
+      name: `Parking Revenue in ${data.name}, Texas`,
+    },
+    areaServed: { "@type": "City", name: data.name, containedInPlace: { "@type": "State", name: "Texas" } },
+    dateModified: data.lastUpdated ?? "2026-03",
+    publisher: {
+      "@type": "Organization",
+      name: "Texas Parking Revenue",
+      url: "https://texasparkingrevenue.com",
+      sponsor: { "@type": "LocalBusiness", name: "Perfect Parking" },
+    },
+  });
+
   return (
     <Layout>
       <MetaTags
         title={data.title}
         description={data.description}
         path={canonicalPath}
+        type="article"
+        schema={schemas}
       />
 
       {/* Hero */}

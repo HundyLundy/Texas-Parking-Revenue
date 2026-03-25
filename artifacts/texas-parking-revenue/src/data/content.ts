@@ -6,7 +6,7 @@ export const cities = {
     title: "Houston Parking Revenue & Management",
     description: "Navigate Houston's complex parking ecosystem. Learn how to monetize your lots and garages in Space City.",
     drivers: ["Texas Medical Center", "Downtown Corporate Offices", "Galleria Hospitality", "Sports & Entertainment"],
-    overview: "Houston's sprawling geography means parking is a necessity, not a luxury. With distinct micro-markets like the TMC, Downtown, and the Galleria, one-size-fits-all parking strategies fail. Proper pricing models and gateless enforcement can drastically lift NOI.",
+    overview: "Houston doesn't have zoning laws, which means parking demand shows up in places most operators aren't expecting. The TMC alone generates a level of daily vehicle traffic that rivals some airport corridors. But what kills most Houston owners isn't lack of demand — it's the assumption that any parking program will work. It won't. The Galleria needs a completely different approach than Downtown, and both are nothing like Midtown. One-size-fits-all dies fast here.",
     metroSummary: "4th largest U.S. city with 2.3M residents and no zoning laws — meaning dense mixed-use parking demand exists in unexpected pockets across the city.",
     monetizationOpportunities: [
       "Dynamic event pricing near NRG Stadium and Toyota Center",
@@ -38,7 +38,7 @@ export const cities = {
     title: "Austin Parking Revenue Optimization",
     description: "Capitalize on Austin's density and tech-driven economy. Parking strategies for ATX properties.",
     drivers: ["Tech Hubs / The Domain", "Downtown Density", "UT Austin Proximity", "Major Festivals (SXSW, ACL)"],
-    overview: "Austin's rapid growth and limited space make its parking assets incredibly valuable. Embracing gateless, app-based payment systems appeals to the tech-forward demographic while minimizing friction and infrastructure costs.",
+    overview: "Austin is running out of space, and parking is feeling it first. What used to be an easy free lot on Rainey Street is now a revenue-generating asset — if you're running it right. The challenge here isn't demand. It's that Austin property owners have historically given parking away for free, and now walking that back requires some finesse. The good news: the city's tech-forward population adopts new parking systems faster than anywhere else in Texas.",
     metroSummary: "Austin is the fastest-growing major metro in the U.S. with an influx of tech headquarters creating unprecedented demand pressure on a historically low-supply parking market.",
     monetizationOpportunities: [
       "App-based gateless systems for tech-savvy downtown users",
@@ -70,7 +70,7 @@ export const cities = {
     title: "Corpus Christi Parking Revenue Guide",
     description: "Parking revenue strategies for Corpus Christi hotels, healthcare campuses, and waterfront commercial properties.",
     drivers: ["Port of Corpus Christi", "North Beach & Waterfront Tourism", "Christus Spohn Health System", "Naval Air Station Corpus Christi"],
-    overview: "Corpus Christi's economy blends tourism, port logistics, naval operations, and regional healthcare — creating diverse parking demand patterns that most national operators overlook. Properties near the waterfront, the Bluff, and the medical district each face distinct occupancy curves and user expectations. A tailored local strategy outperforms generic models in this market.",
+    overview: "Corpus Christi gets written off by national operators who see a mid-size coastal market and move on. That's a mistake — and honestly, it works in your favor if you're a property owner here. The tourism economy, the Port, the naval base, and the Christus Spohn health system each pull a completely different parking user. Seasonal swings are real. Enforcement optics matter more here than in Houston or Dallas. But the upside for owners who get the strategy right is significant.",
     metroSummary: "Texas's 8th largest city with ~320K residents and a growing tourism economy anchored by the Corpus Christi Bay, the Port, and a strong Navy presence — all of which create distinct parking demand segments.",
     monetizationOpportunities: [
       "Seasonal waterfront pricing tied to beach traffic and cruise ship arrivals",
