@@ -10,7 +10,7 @@ import DirectoryIndex from "@/pages/directory/DirectoryIndex";
 import PropertiesDirectory from "@/pages/directory/Properties";
 import VendorsDirectory from "@/pages/directory/Vendors";
 
-import { HoustonCity, DallasCity, AustinCity } from "@/pages/cities";
+import { HoustonCity, AustinCity, CorpusChristiCity } from "@/pages/cities";
 import { HotelAsset, HospitalAsset, CommercialREAsset } from "@/pages/assets";
 import { DecisionPage } from "@/pages/decisions";
 
@@ -34,8 +34,8 @@ function Router() {
       
       {/* Cities */}
       <Route path="/texas/houston-parking-revenue" component={HoustonCity} />
-      <Route path="/texas/dallas-parking-revenue" component={DallasCity} />
       <Route path="/texas/austin-parking-revenue" component={AustinCity} />
+      <Route path="/texas/corpus-christi-parking-revenue" component={CorpusChristiCity} />
       
       {/* Assets */}
       <Route path="/texas/hotel-parking-revenue" component={HotelAsset} />

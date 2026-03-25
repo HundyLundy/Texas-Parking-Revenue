@@ -2,25 +2,100 @@
 export const cities = {
   houston: {
     name: "Houston",
+    slug: "houston",
     title: "Houston Parking Revenue & Management",
     description: "Navigate Houston's complex parking ecosystem. Learn how to monetize your lots and garages in Space City.",
     drivers: ["Texas Medical Center", "Downtown Corporate Offices", "Galleria Hospitality", "Sports & Entertainment"],
     overview: "Houston's sprawling geography means parking is a necessity, not a luxury. With distinct micro-markets like the TMC, Downtown, and the Galleria, one-size-fits-all parking strategies fail. Proper pricing models and gateless enforcement can drastically lift NOI.",
-  },
-  dallas: {
-    name: "Dallas",
-    title: "Dallas Parking Revenue Strategies",
-    description: "Maximize parking NOI in the DFW metroplex. Tailored insights for Dallas property owners.",
-    drivers: ["Downtown Corporate HQs", "Uptown Entertainment", "DFW Airport Proximity", "Convention Traffic"],
-    overview: "Dallas boasts a highly competitive commercial real estate market where premium parking is a powerful asset. Shifting towards hybrid self-managed/outsourced models with strong LPR (License Plate Recognition) enforcement yields the highest returns.",
+    metroSummary: "4th largest U.S. city with 2.3M residents and no zoning laws — meaning dense mixed-use parking demand exists in unexpected pockets across the city.",
+    monetizationOpportunities: [
+      "Dynamic event pricing near NRG Stadium and Toyota Center",
+      "PMS-integrated hotel parking across the hotel district",
+      "TMC employee/visitor tiered programs with validation reform",
+      "Gateless LPR for Midtown and Montrose mixed-use retail",
+    ],
+    operationalRisks: [
+      "Flooding risk impacts surface lot reliability and equipment",
+      "Highly fragmented ownership makes coordinated programs difficult",
+      "Aggressive towing culture creates litigation exposure",
+      "Flat geography encourages driving, limiting walk-to alternatives",
+    ],
+    ownerQuestions: [
+      { q: "Is my parking revenue keeping pace with Houston's commercial rent growth?", a: "Most hotel and medical assets in Houston are leaving $200K–$800K annually uncaptured due to outdated gated systems and under-priced validation programs. A revenue audit typically surfaces recoverable income within 30 days." },
+      { q: "Should I self-manage or bring in an outsourced operator?", a: "For assets under 300 spaces, self-management is often viable with the right software stack. Above 300 spaces or in complex mixed-use settings, outsourcing to a local operator nearly always outperforms in-house management on net NOI." },
+      { q: "How do I handle parking during major Houston events?", a: "Demand-based pricing during Rodeo, Texans games, and conventions can 3–5x your transient revenue per event. This requires dynamic pricing software and pre-authorized rate flexibility — not something static gated systems support." },
+    ],
+    relatedAssets: [
+      { label: "Hotel Parking Revenue", href: "/texas/hotel-parking-revenue" },
+      { label: "Hospital Parking Management", href: "/texas/hospital-parking-management" },
+      { label: "Commercial Real Estate Parking", href: "/texas/commercial-real-estate-parking-revenue" },
+    ],
+    lastUpdated: "March 2026",
   },
   austin: {
     name: "Austin",
+    slug: "austin",
     title: "Austin Parking Revenue Optimization",
     description: "Capitalize on Austin's density and tech-driven economy. Parking strategies for ATX properties.",
-    drivers: ["Tech Hubs / Domain", "Downtown Density", "UT Austin Vicinity", "Festivals (SXSW, ACL)"],
+    drivers: ["Tech Hubs / The Domain", "Downtown Density", "UT Austin Proximity", "Major Festivals (SXSW, ACL)"],
     overview: "Austin's rapid growth and limited space make its parking assets incredibly valuable. Embracing gateless, app-based payment systems appeals to the tech-forward demographic while minimizing friction and infrastructure costs.",
-  }
+    metroSummary: "Austin is the fastest-growing major metro in the U.S. with an influx of tech headquarters creating unprecedented demand pressure on a historically low-supply parking market.",
+    monetizationOpportunities: [
+      "App-based gateless systems for tech-savvy downtown users",
+      "Festival/event pricing during SXSW, ACL, and UT home games",
+      "Park-and-ride monetization for Domain-area commuters",
+      "Mixed-use retail validation reform on South Congress and 6th Street",
+    ],
+    operationalRisks: [
+      "Community pushback on transitioning free parking to paid",
+      "Limited supply of structured garages increases surface lot pressure",
+      "High turnover in hospitality staff creates management continuity issues",
+      "Rapid construction limits surface lot count and layout stability",
+    ],
+    ownerQuestions: [
+      { q: "Should I start charging for parking that is currently free?", a: "If your lot serves a mixed-use retail or entertainment corridor, you are almost certainly subsidizing non-customers. A pilot program with low-friction enforcement — LPR cameras and digital citations — can validate demand before a full transition." },
+      { q: "How does my parking fit into Austin's growth story?", a: "Austin's development pipeline means parking assets will only appreciate in scarcity value. Locking in flexible management contracts now — rather than long-term outsourcing agreements — preserves optionality as land values shift." },
+      { q: "Is gateless parking right for my Austin property?", a: "Probably yes. Austin's tech-forward user base adopts mobile-first payment faster than almost any other Texas market. Removing gates also eliminates the hardware CapEx cycle every 7–10 years." },
+    ],
+    relatedAssets: [
+      { label: "Hotel Parking Revenue", href: "/texas/hotel-parking-revenue" },
+      { label: "Commercial Real Estate Parking", href: "/texas/commercial-real-estate-parking-revenue" },
+      { label: "Gated vs. Gateless Systems", href: "/resources/gated-vs-gateless-parking" },
+    ],
+    lastUpdated: "March 2026",
+  },
+  "corpus-christi": {
+    name: "Corpus Christi",
+    slug: "corpus-christi",
+    title: "Corpus Christi Parking Revenue Guide",
+    description: "Parking revenue strategies for Corpus Christi hotels, healthcare campuses, and waterfront commercial properties.",
+    drivers: ["Port of Corpus Christi", "North Beach & Waterfront Tourism", "Christus Spohn Health System", "Naval Air Station Corpus Christi"],
+    overview: "Corpus Christi's economy blends tourism, port logistics, naval operations, and regional healthcare — creating diverse parking demand patterns that most national operators overlook. Properties near the waterfront, the Bluff, and the medical district each face distinct occupancy curves and user expectations. A tailored local strategy outperforms generic models in this market.",
+    metroSummary: "Texas's 8th largest city with ~320K residents and a growing tourism economy anchored by the Corpus Christi Bay, the Port, and a strong Navy presence — all of which create distinct parking demand segments.",
+    monetizationOpportunities: [
+      "Seasonal waterfront pricing tied to beach traffic and cruise ship arrivals",
+      "Long-term parking programs for port workers and naval base contractors",
+      "Event-based pricing near American Bank Center arena and convention center",
+      "Hospital campus tiered programs at Christus Spohn and Driscoll Children's",
+    ],
+    operationalRisks: [
+      "Hurricane and tropical storm exposure affects surface lot infrastructure",
+      "Seasonal demand swings between summer tourism peaks and off-season lows",
+      "Limited structured garage inventory shifts pressure to surface lots",
+      "Tourism-adjacent enforcement risks damaging visitor experience and reviews",
+    ],
+    ownerQuestions: [
+      { q: "How should I approach seasonal demand swings?", a: "Corpus Christi's summer peak (May–September) and shoulder seasons require dynamic rate structures rather than flat annual rates. Properties near the bay should evaluate tiered weekend pricing that scales with occupancy — capturing peak dollars without deterring off-season use." },
+      { q: "Is enforcement viable in a tourism-heavy market?", a: "Yes, but the approach matters. Citation-first enforcement in tourist corridors drives negative reviews and city council attention. LPR-based validation programs — where spending at a retailer or hotel grants free or discounted parking — recaptures revenue while preserving the visitor experience." },
+      { q: "What impact does the Port have on parking demand?", a: "Port-related contractors, logistics workers, and cruise passengers generate stable, non-seasonal demand near the waterfront. Monthly parking programs targeting this segment can anchor a baseline revenue floor that buffers the summer/winter swings inherent in the tourist economy." },
+    ],
+    relatedAssets: [
+      { label: "Hotel Parking Revenue", href: "/texas/hotel-parking-revenue" },
+      { label: "Hospital Parking Management", href: "/texas/hospital-parking-management" },
+      { label: "When Paid Parking Makes Sense", href: "/resources/when-paid-parking-makes-sense" },
+    ],
+    lastUpdated: "March 2026",
+  },
 };
 
 export const assets = {

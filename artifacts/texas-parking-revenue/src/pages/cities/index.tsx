@@ -5,10 +5,10 @@ export function HoustonCity() {
   return <CityPageTemplate id="houston" data={cities.houston} />;
 }
 
-export function DallasCity() {
-  return <CityPageTemplate id="dallas" data={cities.dallas} />;
-}
-
 export function AustinCity() {
   return <CityPageTemplate id="austin" data={cities.austin} />;
+}
+
+export function CorpusChristiCity() {
+  return <CityPageTemplate id="corpus-christi" data={cities["corpus-christi"]} />;
 }
