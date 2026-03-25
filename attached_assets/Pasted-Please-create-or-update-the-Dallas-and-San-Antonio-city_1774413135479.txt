@@ -1,0 +1,125 @@
+Please create or update the Dallas and San Antonio city pages using the following copy and style.
+
+GLOBAL RULES FOR BOTH PAGES
+- Keep these city pages resource-first, not sales-first
+- No aggressive claims that are not sourced
+- No mid-page CTA modules
+- Use the single featured operator / sponsored module only at the very bottom of the page
+- Tone should be credible, calm, operator-friendly, and city-specific
+- Match the overall style of the revised Houston / Austin / Corpus Christi pages
+
+==================================================
+DALLAS PAGE
+==================================================
+
+Title:
+Dallas Parking Revenue & Management
+
+Subtitle:
+Demand, pricing, enforcement, and monetization strategies for Dallas hotels, healthcare campuses, and commercial assets.
+
+Last reviewed:
+March 2026
+
+Market snapshot:
+Dallas is one of Texas’s most important commercial and hospitality markets, with demand shaped by downtown offices, healthcare campuses, destination retail, major venues, and convention traffic. That makes parking valuable, but highly submarket-specific.
+
+Market Overview: Dallas
+Dallas is not one parking market. Downtown, Uptown, Deep Ellum, the Medical District, and destination-heavy commercial areas all behave differently. A property near a hospital campus or convention corridor has a very different parking opportunity than a suburban office asset with abundant free supply. The real mistake in Dallas is assuming that one pricing model, one enforcement style, or one technology setup will work across all of them. Dallas is large, fast-moving, and highly dependent on neighborhood, daypart, and event calendar.
+
+Key Demand Drivers
+- Downtown corporate offices
+- Medical District and hospital campuses
+- Convention and event traffic
+- Hospitality and destination retail
+
+Monetization Opportunities
+1. Event-based pricing near major venue and convention demand
+2. Hotel parking programs with better rate logic and cleaner guest communication
+3. Medical-campus parking programs that balance access, validation, and throughput
+4. Mixed-use and urban retail parking with stronger enforcement and digital payment options
+
+Operational Risks
+- Demand can shift sharply by district, event schedule, and time of day
+- Weak enforcement can create leakage, but overly aggressive enforcement can create tenant and guest backlash
+- Older gate-based setups can create queueing and maintenance headaches
+- Mixed-use properties often blur the line between customer, employee, and transient parking
+
+Common Owner Questions for Dallas
+
+Is downtown or urban Dallas parking worth monetizing more aggressively?
+Often yes, but only when pricing, enforcement, and user experience are aligned. High-demand submarkets can support more active parking management, but the goal should be better NOI, not just higher posted rates.
+
+Should I self-manage or bring in an outsourced operator?
+That depends on how complex the parking operation is. Simple assets with stable demand can sometimes be managed internally. But once parking starts affecting revenue, complaints, enforcement, staffing, or reporting, the comparison should shift from “what does the operator cost?” to “which model produces the best net outcome?”
+
+What makes Dallas difficult operationally?
+The challenge is usually not lack of demand. It is fragmentation. Different neighborhoods, user types, and trip purposes produce different parking behavior. Event traffic, office demand, medical demand, and retail demand do not behave the same way, so rate structure and enforcement philosophy have to match the asset.
+
+Why Local Context Matters in Dallas
+National parking playbooks tend to flatten Dallas into one large Sun Belt market. That misses the point. Medical District parking is not downtown office parking. Deep Ellum is not Uptown. Event-oriented assets need a different pricing rhythm than a hotel or hospital campus. In Dallas, local context matters because parking demand is driven by very different trip types across the city.
+
+Related Guides for Dallas Owners
+- Hotel Parking Revenue
+- Hospital Parking Management
+- Commercial Real Estate Parking
+- Self-Managed vs. Outsourced Parking
+- Gated vs. Gateless ROI
+
+==================================================
+SAN ANTONIO PAGE
+==================================================
+
+Title:
+San Antonio Parking Revenue & Management
+
+Subtitle:
+Parking strategy for San Antonio hotels, healthcare campuses, downtown assets, and destination-driven properties.
+
+Last reviewed:
+March 2026
+
+Market snapshot:
+San Antonio’s parking dynamics are shaped by downtown tourism, the River Walk, convention activity, healthcare demand, and destination-driven traffic. That creates a market where some properties should focus on monetization, while others should prioritize access and user experience first.
+
+Market Overview: San Antonio
+San Antonio’s parking economy is more layered than it looks. On the surface, it feels like a tourism and downtown city, but that is only part of the picture. River Walk and convention demand matter, but so do healthcare campuses, airport-area growth, and other destination-driven uses. That mix creates a market where some properties should think aggressively about parking revenue, while others should prioritize access, validation, and experience. The risk in San Antonio is not missing demand. It is applying the wrong strategy to the wrong kind of property.
+
+Key Demand Drivers
+- River Walk and downtown tourism
+- Convention and event traffic
+- Healthcare and medical campuses
+- Airport-area and destination-driven demand
+
+Monetization Opportunities
+1. Hotel parking programs tied to downtown and tourism demand
+2. Event and destination pricing around convention and entertainment activity
+3. Validation reform for mixed-use and hospitality properties
+4. Better parking operations for healthcare and campus environments
+
+Operational Risks
+- Tourist-heavy areas can create demand spikes that do not translate well to static pricing
+- Poor wayfinding and arrival friction can damage user experience quickly
+- Event-heavy parking can encourage overly aggressive enforcement if not managed carefully
+- Some assets need access reliability more than maximum yield
+
+Common Owner Questions for San Antonio
+
+Should downtown San Antonio hotels charge for parking?
+Sometimes yes, especially where location and demand support it. But the key question is whether charging improves NOI without undermining guest expectations or creating arrival friction. In a tourism-heavy environment, clarity and execution matter as much as the fee itself.
+
+Is parking in San Antonio mainly a hospitality issue?
+No. Downtown hospitality is a major piece of the market, but healthcare, airport-area growth, and other destination-driven demand matter too. Different assets need different operating models.
+
+When does parking become a management problem instead of just a surface lot?
+Usually when it starts affecting access, complaints, traffic flow, validation, staffing time, or portfolio visibility. In healthcare and tourism-heavy settings, parking can quickly become part of the first impression of the property, not just a background utility.
+
+Why Local Context Matters in San Antonio
+San Antonio is not just another Texas downtown. The River Walk, convention traffic, medical activity, tourism, and other destination demand all pull parking in different directions. A strategy that works for a destination hotel near downtown may be wrong for a healthcare campus or an airport-area property. The strongest parking programs in San Antonio will be the ones that match pricing, access, and enforcement to the way people actually use the asset.
+
+Related Guides for San Antonio Owners
+- Hotel Parking Revenue
+- Hospital Parking Management
+- Commercial Real Estate Parking
+- When Paid Parking Makes Sense
+- Hospital Parking Outsourcing

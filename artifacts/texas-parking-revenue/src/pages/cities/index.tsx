@@ -12,3 +12,11 @@ export function AustinCity() {
 export function CorpusChristiCity() {
   return <CityPageTemplate id="corpus-christi" data={cities["corpus-christi"]} />;
 }
+
+export function DallasCity() {
+  return <CityPageTemplate id="dallas" data={cities.dallas} />;
+}
+
+export function SanAntonioCity() {
+  return <CityPageTemplate id="san-antonio" data={cities["san-antonio"]} />;
+}

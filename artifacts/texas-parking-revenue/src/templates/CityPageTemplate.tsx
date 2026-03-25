@@ -1,10 +1,9 @@
 import { Layout } from "@/components/layout/Layout";
 import { MetaTags } from "@/components/seo/MetaTags";
-import { CTABlock } from "@/components/blocks/CTABlock";
-import { PerfectParkingBlock } from "@/components/blocks/PerfectParkingBlock";
 import { FAQAccordion } from "@/components/shared/FAQAccordion";
 import { Link } from "wouter";
-import { MapPin, Building, TrendingUp, AlertTriangle, DollarSign, ArrowRight, Calendar } from "lucide-react";
+import { MapPin, Building, TrendingUp, AlertTriangle, DollarSign, ArrowRight, Calendar, ExternalLink } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 interface CityData {
   name: string;
@@ -17,6 +16,7 @@ interface CityData {
   monetizationOpportunities?: string[];
   operationalRisks?: string[];
   ownerQuestions?: { q: string; a: string }[];
+  localContextNote?: string;
   relatedAssets?: { label: string; href: string }[];
   lastUpdated?: string;
 }
@@ -58,7 +58,6 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
       "@type": "Organization",
       name: "Texas Parking Revenue",
       url: "https://texasparkingrevenue.com",
-      sponsor: { "@type": "LocalBusiness", name: "Perfect Parking" },
     },
   });
 
@@ -199,28 +198,23 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
         </section>
       )}
 
-      {/* Local Expertise Note */}
-      <section className="py-16 bg-background border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-display font-bold text-foreground mb-4">
-            Why Local Expertise Matters in {data.name}
-          </h2>
-          <p className="text-lg text-foreground/75 leading-relaxed">
-            National operators often apply cookie-cutter models to Texas markets. But {data.name} has unique
-            zoning conditions, driver behavior patterns, and enforcement sensitivities. A strategy relying
-            heavily on aggressive towing might work in some markets, but in {data.name}, gateless LPR combined
-            with smart digital citations yields higher net collections and preserves brand reputation.
-          </p>
-
-          <div className="mt-10">
-            <PerfectParkingBlock />
+      {/* Why Local Context Matters */}
+      {data.localContextNote && (
+        <section className="py-16 bg-background border-b border-border">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-4">
+              Why Local Context Matters in {data.name}
+            </h2>
+            <p className="text-lg text-foreground/75 leading-relaxed">
+              {data.localContextNote}
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Related Assets */}
       {data.relatedAssets && data.relatedAssets.length > 0 && (
-        <section className="py-14 bg-secondary">
+        <section className="py-14 bg-secondary border-b border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-xl font-display font-bold text-foreground mb-6">
               Related Guides for {data.name} Owners
@@ -243,7 +237,32 @@ export function CityPageTemplate({ id, data }: CityPageProps) {
         </section>
       )}
 
-      <CTABlock />
+      {/* Sponsored Listing — Perfect Parking */}
+      <section className="py-10 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/45 mb-2">
+            Sponsored Listing
+          </p>
+          <div className="border border-border rounded-xl px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-secondary/50">
+            <div>
+              <p className="font-semibold text-foreground text-sm">
+                {siteConfig.perfectParkingName}
+              </p>
+              <p className="text-sm text-muted-foreground mt-0.5 max-w-lg">
+                Texas-based parking management for hotels, hospitals, and commercial properties. Specializes in outsourced operations, enforcement, and revenue analysis.
+              </p>
+            </div>
+            <a
+              href={siteConfig.perfectParkingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors"
+            >
+              Visit website <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

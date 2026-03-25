@@ -124,6 +124,16 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/texas/dallas-parking-revenue" className="hover:text-accent transition-colors">
+                    Dallas
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/texas/san-antonio-parking-revenue" className="hover:text-accent transition-colors">
+                    San Antonio
+                  </Link>
+                </li>
+                <li>
                   <Link href="/texas/corpus-christi-parking-revenue" className="hover:text-accent transition-colors">
                     Corpus Christi
                   </Link>

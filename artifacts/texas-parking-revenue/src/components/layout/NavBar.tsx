@@ -29,6 +29,8 @@ const menuSections = [
     links: [
       { name: "Houston Parking Revenue", href: "/texas/houston-parking-revenue" },
       { name: "Austin Parking Revenue", href: "/texas/austin-parking-revenue" },
+      { name: "Dallas Parking Revenue", href: "/texas/dallas-parking-revenue" },
+      { name: "San Antonio Parking Revenue", href: "/texas/san-antonio-parking-revenue" },
       { name: "Corpus Christi Parking Revenue", href: "/texas/corpus-christi-parking-revenue" },
     ],
   },
