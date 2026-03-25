@@ -1,0 +1,47 @@
+Rewrite the entire site so it feels like an industry guide and resource hub for Texas parking revenue, not a sales page.
+
+Core rule:
+This website should feel primarily educational, credible, and useful to owners/operators researching parking monetization, parking management, NOI impact, guest experience, patient experience, and property value. It should not feel like a landing page for Perfect Parking.
+
+Make these changes across the whole site:
+
+1. Use only one CTA on each page at most, and ideally keep the main CTA buried near the very bottom of the page.
+2. Remove aggressive sales language like:
+   - Get a Free Revenue Audit
+   - Talk to Perfect Parking
+   - Featured Operator
+   - No commitment, usually responds same day
+3. Replace those with a single subtle line near the bottom such as:
+   - Powered by Perfect Parking
+   - Contact Perfect Parking for a parking revenue analysis
+4. Do not present Perfect Parking as the center of the site.
+5. Do not say Perfect Parking wrote the content.
+6. Keep Perfect Parking visible only as a quiet supporting sponsor/resource at the bottom or in the footer.
+7. Rewrite all homepage and subpage copy so it reads like an industry guide, not a pitch.
+8. Keep the existing structure around:
+   - Texas market guides
+   - asset playbooks
+   - decision guides
+   - parking systems / monetization information
+9. Put stronger conversion language only on the dedicated contact / analysis page, not across the informational pages.
+10. Prioritize trust, neutrality, clarity, and usefulness over conversion pressure.
+
+Homepage direction:
+- Hero should explain what the site is and who it is for
+- Focus on parking as a revenue and asset-management topic
+- Keep the city guides, asset playbooks, and decision guides
+- Add a short methodology or editorial-style trust section
+- Keep the only clear CTA near the bottom
+- Footer can say “Powered by Perfect Parking” with a subtle link
+
+Tone:
+- executive-friendly
+- informative
+- useful
+- calm
+- no hype
+- no hard sell
+- no spammy marketing language
+
+Goal:
+Make the site feel like the best Texas parking revenue resource for owners and operators, with Perfect Parking subtly present in the background as the company people can contact if they want help.
