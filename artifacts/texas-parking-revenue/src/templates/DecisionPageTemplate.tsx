@@ -155,18 +155,6 @@ export function DecisionPageTemplate({ id, data }: DecisionPageProps) {
         </div>
       </section>
 
-      {/* Subtle sponsor line */}
-      <section className="py-10 bg-secondary border-t border-border">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            Powered by Perfect Parking. Property owners who want a parking revenue analysis can{" "}
-            <Link href="/parking-revenue-analysis" className="text-foreground/70 underline underline-offset-2 hover:text-primary transition-colors">
-              contact them here
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
     </Layout>
   );
 }

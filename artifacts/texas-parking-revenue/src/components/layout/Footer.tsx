@@ -195,6 +195,11 @@ export function Footer() {
                     Revenue Analysis
                   </Link>
                 </li>
+                <li>
+                  <Link href="/contact" className="hover:text-accent transition-colors">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
 

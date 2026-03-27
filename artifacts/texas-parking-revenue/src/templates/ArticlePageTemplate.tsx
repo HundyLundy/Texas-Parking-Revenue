@@ -89,14 +89,6 @@ export function ArticlePageTemplate({
         </ul>
       </section>
 
-      {/* Subtle footer note */}
-      <section className="py-8 bg-secondary border-t border-border">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs text-muted-foreground/55 leading-relaxed">
-            Supported by Perfect Parking. This page is for general information and is not legal, tax, or investment advice.
-          </p>
-        </div>
-      </section>
     </Layout>
   );
 }

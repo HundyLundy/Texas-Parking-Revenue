@@ -20,6 +20,7 @@ import ParkingRFPGuide from "@/pages/articles/ParkingRFPGuide";
 import GatedVsGateless from "@/pages/articles/GatedVsGateless";
 import HospitalOutsourcing from "@/pages/articles/HospitalOutsourcing";
 
+import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 import { decisions } from "@/data/content";
 
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/resources" component={Resources} />
       <Route path="/parking-revenue-analysis" component={LeadCapture} />
+      <Route path="/contact" component={Contact} />
       
       {/* Directory */}
       <Route path="/directory" component={DirectoryIndex} />
