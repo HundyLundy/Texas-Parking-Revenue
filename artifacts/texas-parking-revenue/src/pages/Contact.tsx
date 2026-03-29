@@ -74,10 +74,10 @@ export default function Contact() {
             Get in touch
           </p>
           <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Request More Information
+            Get More Information
           </h1>
           <p className="text-muted-foreground text-base leading-relaxed mb-10 max-w-xl">
-            Fill out the form below and someone will follow up with information relevant to your property and market.
+            Fill out the form and someone from the Perfect Parking team will follow up with information relevant to your property.
           </p>
 
           {status === "success" ? (
