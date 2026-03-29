@@ -6,8 +6,8 @@ const WEBHOOK_URL =
   "https://services.leadconnectorhq.com/hooks/ZF2Qjd4J1GmT9w5XbinN/webhook-trigger/Upp1pos3mL7UjdCVKsJp";
 
 const PROPERTY_TYPES = [
-  "Hotel",
-  "Hospital",
+  "Hotel / Hospitality",
+  "Hospital / Healthcare",
   "Commercial Real Estate",
   "Other",
 ];
