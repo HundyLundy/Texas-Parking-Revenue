@@ -1,0 +1,116 @@
+<!-- CONTACT FORM — Routes to Perfect Parking / Cooper via GHL webhook -->
+<section id="contact" style="background:#f8f9fa; padding:60px 20px;">
+  <div style="max-width:600px; margin:0 auto;">
+    <h2 style="font-size:28px; font-weight:700; color:#1a1a2e; margin-bottom:8px; text-align:center;">
+      Let's Talk About Your Property
+    </h2>
+    <p style="color:#555; text-align:center; margin-bottom:32px;">
+      Fill out the form below and a parking revenue specialist will be in touch within one business day.
+    </p>
+
+    <form id="contactForm" style="display:flex; flex-direction:column; gap:16px;">
+      <!-- Hidden routing fields -->
+      <input type="hidden" name="source" value="texas-parking-revenue">
+      <input type="hidden" name="division" value="parking">
+
+      <!-- Name row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div>
+          <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">First Name *</label>
+          <input type="text" name="firstName" required
+            style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; box-sizing:border-box;">
+        </div>
+        <div>
+          <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">Last Name *</label>
+          <input type="text" name="lastName" required
+            style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; box-sizing:border-box;">
+        </div>
+      </div>
+
+      <!-- Email / Phone row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div>
+          <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">Email *</label>
+          <input type="email" name="email" required
+            style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; box-sizing:border-box;">
+        </div>
+        <div>
+          <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">Phone</label>
+          <input type="tel" name="phone"
+            style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; box-sizing:border-box;">
+        </div>
+      </div>
+
+      <!-- Property Type -->
+      <div>
+        <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">Property Type</label>
+        <select name="propertyType"
+          style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; background:#fff; box-sizing:border-box;">
+          <option value="">Select one...</option>
+          <option value="hotel">Hotel / Hospitality</option>
+          <option value="hospital">Hospital / Medical Campus</option>
+          <option value="commercial-real-estate">Commercial Real Estate</option>
+          <option value="retail">Retail / Shopping Center</option>
+          <option value="mixed-use">Mixed-Use Development</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label style="display:block; font-size:13px; font-weight:600; color:#333; margin-bottom:4px;">Tell us about your property</label>
+        <textarea name="message" rows="4"
+          placeholder="Number of parking spaces, current challenges, goals..."
+          style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:6px; font-size:15px; resize:vertical; box-sizing:border-box;"></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" id="submitBtn"
+        style="background:#1a1a2e; color:#fff; padding:14px 24px; border:none; border-radius:6px; font-size:16px; font-weight:600; cursor:pointer; transition:background 0.2s;">
+        Request a Free Consultation
+      </button>
+
+      <!-- Status messages -->
+      <div id="formSuccess" style="display:none; background:#d4edda; color:#155724; padding:14px; border-radius:6px; text-align:center; font-weight:600;">
+        Request received. We'll be in touch within one business day.
+      </div>
+      <div id="formError" style="display:none; background:#f8d7da; color:#721c24; padding:14px; border-radius:6px; text-align:center;">
+        Something went wrong. Please email us directly or try again.
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const btn = document.getElementById('submitBtn');
+  const successDiv = document.getElementById('formSuccess');
+  const errorDiv = document.getElementById('formError');
+  
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  successDiv.style.display = 'none';
+  errorDiv.style.display = 'none';
+
+  const formData = new FormData(this);
+  const payload = {};
+  formData.forEach((value, key) => { payload[key] = value; });
+
+  try {
+    await fetch('https://services.leadconnectorhq.com/hooks/ZF2Qjd4J1GmT9w5XbinN/webhook-trigger/Upp1pos3mL7UjdCVKsJp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload  )
+    });
+    successDiv.style.display = 'block';
+    this.reset();
+  } catch (err) {
+    errorDiv.style.display = 'block';
+  } finally {
+    btn.textContent = 'Request a Free Consultation';
+    btn.disabled = false;
+  }
+});
+</script>
