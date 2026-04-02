@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm install --frozen-lockfile && pnpm --filter @workspace/texas-parking-revenue run build",
+  "outputDirectory": "artifacts/texas-parking-revenue/dist/public",
+  "installCommand": "echo skip",
+  "framework": null
+}
